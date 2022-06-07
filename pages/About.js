@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import style from "../styles/about.module.css";
 import AboutData from "../Components/AboutData";
-
+import { Roll } from "react-reveal";
 const About = () => {
   return (
     <>

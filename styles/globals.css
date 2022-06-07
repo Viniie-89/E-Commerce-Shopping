@@ -81,6 +81,21 @@ a {
 .shopArrow .slick-next:before {
   content: url("../public/Images/shopArrow1.svg") !important;
 }
+.bannerArrow .slick-prev::before {
+  content: url("../public/Images/bannerArrownext.png");
+}
+
+.bannerArrow .slick-next::before {
+  content: url("../public/Images/bannerArrowPrev.svg");
+}
+.bannerArrow .slick-prev {
+  left: -14px !important;
+  z-index: 132242424;
+}
+.bannerArrow .slick-next {
+  right: -10px !important;
+  z-index: 132242424;
+}
 .recommendArrow .slick-prev {
   left: -10px !important;
   z-index: 132242424;
@@ -110,16 +125,7 @@ a {
   background-color: #fff;
   border: none !important;
 }
-/* .slick-dots {
-  position: absolute;
-  bottom: 2px !important;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-} */
+
 .accordion-item:first-of-type .accordion-button {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);

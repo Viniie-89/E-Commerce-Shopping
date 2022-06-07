@@ -61,12 +61,17 @@ const Header = () => {
 
               <Nav.Link className={style.navlink} active={isActive === "/Cart"}>
                 <div className={style.cartDiv}>
-                  <img src="../Images/cartImage.png" height={24} width={24} />
+                  <img
+                    src="../Images/cardts.svg"
+                    height={24}
+                    width={24}
+                    className={style.cardImage}
+                  />
                 </div>
               </Nav.Link>
               <Nav.Link className={style.navlink} active={isActive === "/Like"}>
                 <div className={style.likeDiv}>
-                  <img src="../Images/likeImage.png" height={24} width={24} />
+                  <img src="../Images/herts.svg" height={24} width={24} />
                 </div>
               </Nav.Link>
               <Nav.Link
@@ -76,9 +81,10 @@ const Header = () => {
               >
                 <div className={style.profileDiv}>
                   <img
-                    src="../Images/profileImage.png"
+                    src="../Images/user.svg"
                     height={24}
                     width={24}
+                    className={style.cardImage}
                   />
                 </div>
               </Nav.Link>

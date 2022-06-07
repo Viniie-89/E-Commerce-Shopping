@@ -34,3 +34,6 @@
 .nav .navbarnav {
   justify-content: space-around;
 }
+.cardImage:hover {
+  fill: brown !important;
+}

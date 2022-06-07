@@ -84,19 +84,31 @@ const Footer = () => {
                 </NavLink>
                 <div className="d-flex">
                   <NavbarBrand>
-                    <img src="../Images/facebookIcon.png" />
+                    <img
+                      src="../Images/facebookIcon.png"
+                      style={{ cursor: "pointer" }}
+                    />
                   </NavbarBrand>
 
                   <NavbarBrand>
-                    <img src="../Images/twetter.png" />
+                    <img
+                      src="../Images/twetter.png"
+                      style={{ cursor: "pointer" }}
+                    />
                   </NavbarBrand>
 
                   <NavbarBrand>
-                    <img src="../Images/linkedin.png" />
+                    <img
+                      src="../Images/linkedin.png"
+                      style={{ cursor: "pointer" }}
+                    />
                   </NavbarBrand>
 
                   <NavbarBrand>
-                    <img src="../Images/instagram.png" />
+                    <img
+                      src="../Images/instagram.png"
+                      style={{ cursor: "pointer" }}
+                    />
                   </NavbarBrand>
                 </div>
               </Col>

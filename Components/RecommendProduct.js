@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import product from "../Json/ProductData.json";
+import Roll from "react-reveal";
 const RecommendProduct = () => {
   const settings = {
     dots: true,
@@ -45,38 +46,40 @@ const RecommendProduct = () => {
   return (
     <Container fluid className={style.recommendContainer}>
       <Container>
-        <Row>
-          <h3 className={style.recommendText}>Recommend Product</h3>
-          <Col>
-            <div>
-              <Slider {...settings} className="recommendArrow">
-                {product.map((elem) => {
-                  return (
-                    <>
-                      <Card className={style.productCard}>
-                        <img src={elem.image} />
-                        <Card.Body className={style.cardBody1}>
-                          <Card.Title className={style.cardTitle}>
-                            {elem.title}
-                          </Card.Title>
-                          <Card.Title className={style.cardTitles}>
-                            {elem.title1}
-                          </Card.Title>
-                        </Card.Body>
-                        <Card.Body>
-                          <Card.Title className={style.cardTitle1}>
-                            {elem.title2}
-                          </Card.Title>
-                          <img src={elem.star} height={18} width={106} />
-                        </Card.Body>
-                      </Card>
-                    </>
-                  );
-                })}
-              </Slider>
-            </div>
-          </Col>
-        </Row>
+        <Roll left>
+          <Row>
+            <h3 className={style.recommendText}>Recommend Product</h3>
+            <Col>
+              <div>
+                <Slider {...settings} className="recommendArrow">
+                  {product.map((elem) => {
+                    return (
+                      <>
+                        <Card className={style.productCard}>
+                          <img src={elem.image} />
+                          <Card.Body className={style.cardBody1}>
+                            <Card.Title className={style.cardTitle}>
+                              {elem.title}
+                            </Card.Title>
+                            <Card.Title className={style.cardTitles}>
+                              {elem.title1}
+                            </Card.Title>
+                          </Card.Body>
+                          <Card.Body>
+                            <Card.Title className={style.cardTitle1}>
+                              {elem.title2}
+                            </Card.Title>
+                            <img src={elem.star} height={18} width={106} />
+                          </Card.Body>
+                        </Card>
+                      </>
+                    );
+                  })}
+                </Slider>
+              </div>
+            </Col>
+          </Row>
+        </Roll>
       </Container>
     </Container>
   );

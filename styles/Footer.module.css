@@ -22,20 +22,20 @@
   color: #f4f4f4;
   margin-bottom: 3%;
 }
-.footerLoginButton {
+/* .footerLoginButton {
   border: none;
-  /* background: none; */
+  background: none;
   outline: none;
   justify-content: center;
   align-items: center;
   padding: 10px 34px;
-  /* gap: 10px; */
+  gap: 10px;
 
   width: 180px;
   height: 48px;
 
   background-color: #ffffff !important;
-  /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 
   font-family: "Poppins";
   font-style: normal;
@@ -43,6 +43,63 @@
   font-size: 18px;
   line-height: 27px;
   color: #7d89ff;
+} */
+.footerLoginButton {
+  /* position: relative;
+  background-color: #04aa6d;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 200px; */
+  border: none;
+  background: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 34px;
+  gap: 10px;
+
+  width: 180px;
+  height: 48px;
+
+  background-color: #ffffff !important;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7d89ff;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.footerLoginButton:after {
+  content: "";
+  background: #7d89ff;
+  display: block;
+
+  padding-top: 300%;
+  padding-left: 400%;
+  margin-left: -34px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+  width: 100%;
+}
+
+.footerLoginButton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+  background-color: #7d89ff !important;
 }
 .footerHome {
   font-family: "Poppins";
