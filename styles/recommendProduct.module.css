@@ -1,0 +1,71 @@
+.recommendText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  /* identical to box height, or 48px */
+
+  text-align: center;
+
+  color: #000000;
+}
+.recommendContainer {
+  margin-top: 6%;
+  margin-bottom: 7%;
+}
+
+.productCard {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.cardTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #0d1222;
+}
+.cardBody1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5%;
+}
+.cardTitle1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.cardTitles {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #0d1222;
+}
+.productCard {
+  border: none;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 9%;
+}
+@media (max-width: 576px) {
+  .recommendContainer {
+    padding-bottom: 15%;
+  }
+}

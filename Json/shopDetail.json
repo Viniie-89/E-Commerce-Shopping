@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "image": "../Images/slider1.png",
+    "title": "Tshirt"
+  },
+  {
+    "id": 1,
+    "image": "../Images/slider2.png",
+    "title": "Jacket"
+  },
+  {
+    "id": 2,
+    "image": "../Images/slider3.png",
+    "title": "Jeans"
+  },
+  {
+    "id": 3,
+    "image": "../Images/slider4.png",
+    "title": "shirt"
+  },
+  {
+    "id": 4,
+    "image": "../Images/slider1.png",
+    "title": "Tshirt"
+  },
+  {
+    "id": 5,
+    "image": "../Images/slider2.png",
+    "title": "Jacket"
+  },
+  {
+    "id": 6,
+    "image": "../Images/slider3.png",
+    "title": "Jeans"
+  },
+  {
+    "id": 7,
+    "image": "../Images/slider4.png",
+    "title": "jacket"
+  }
+]

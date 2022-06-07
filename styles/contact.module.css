@@ -1,0 +1,192 @@
+.contactContainer {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+.contactCon {
+  /* padding-top: 5%; */
+  padding-bottom: 6%;
+  position: relative;
+}
+.contactDiv {
+  display: flex;
+  margin-top: 3%;
+}
+.homeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1px;
+  margin-right: 3%;
+  color: #ffffff;
+}
+.slash {
+  color: #ffffff;
+  margin-right: 3%;
+}
+.contactText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1px;
+
+  color: #ffffff;
+}
+.contacth2 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-left: 0px;
+
+  color: #ffffff;
+  margin-top: 1%;
+}
+.contactPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 508px;
+  color: #f4f4f4;
+}
+.contactCard {
+  display: flex;
+  position: absolute;
+  top: 369px;
+  margin-left: 5%;
+}
+.contactCrd {
+  width: 485px;
+  height: 268px;
+
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.contactImage {
+  background-color: #5463ff;
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  margin-left: 9%;
+  margin-top: 40px;
+}
+
+.contactParagraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+
+.contactLoc {
+  display: flex;
+  position: absolute;
+  top: 268px;
+  width: 100%;
+  justify-content: center;
+  left: 0px;
+  margin-top: -1%;
+}
+.cardDiv1 {
+  height: "268px" !important;
+  width: "428px";
+  border: "2px solid red";
+  padding-left: 3%;
+  padding-top: 2%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+}
+.locationImage {
+  background: #5463ff;
+  border-radius: 50px;
+  margin-bottom: 4%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.locationText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #0d1222;
+}
+.paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+.callImage {
+  background: #5463ff;
+  border-radius: 50px;
+  margin-bottom: 4%;
+}
+.contactTexts {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.tshirtEmail {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+.tshirtNumber {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+@media (max-width: 992px) {
+  .contactLoc {
+    display: flex;
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+  }
+  .contactLoc {
+    padding-bottom: 5%;
+  }
+  .cardDiv1 {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+}

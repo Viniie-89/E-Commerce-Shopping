@@ -1,0 +1,36 @@
+.navlinkEnd {
+  justify-content: right;
+}
+.navlink {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 5px;
+  color: #0d1222 !important;
+  margin-left: 10px;
+  /* margin-right: 5px; */
+}
+.icon {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.cartDiv {
+  margin-right: 3%;
+}
+.searchDiv {
+  position: relative;
+  /* margin-left: 14px;
+  margin-right: -37px; */
+  margin-top: 1%;
+  margin-left: 10px;
+}
+.searchImageDiv {
+  position: absolute;
+  margin-left: 81%;
+  margin-top: 2%;
+}
+.nav .navbarnav {
+  justify-content: space-around;
+}

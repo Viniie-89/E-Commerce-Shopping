@@ -1,0 +1,253 @@
+.filterDiv {
+  display: flex;
+
+  /* justify-content: space-around; */
+}
+.categoryAccordion {
+  margin-left: 0px;
+}
+.tshirtText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.filterButton {
+  background: none;
+  outline: none;
+  border: none;
+  margin-left: 4%;
+  margin-top: -2%;
+}
+.filterH6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.categoryDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.menButton {
+  border: 1px solid black;
+  width: 60px;
+  height: 35px;
+  left: 120px;
+  top: 595px;
+  background: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* White color */
+
+  color: black;
+
+  /* background: #5463ff; */
+}
+.womenButton {
+  border: 1px solid black;
+  /* width: 60px; */
+  height: 35px;
+  left: 120px;
+  top: 595px;
+  background: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* White color */
+
+  color: black;
+
+  /* background: #5463ff; */
+}
+.childrenButton {
+  border: 1px solid black;
+  /* width: 60px; */
+  height: 35px;
+  left: 120px;
+  top: 595px;
+  background: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* White color */
+
+  color: black;
+
+  /* background: #5463ff; */
+}
+
+.menButton:hover {
+  background: #5463ff;
+  color: white;
+  border: none;
+}
+.womenButton:hover {
+  background: #5463ff;
+  color: white;
+  border: none;
+}
+.childrenButton:hover {
+  background: #5463ff;
+  color: white;
+  border: none;
+}
+.hrline1 {
+  border: 1px solid grey;
+  background: #dddddd;
+}
+.priceRange {
+  display: flex;
+  justify-content: space-between;
+}
+.colorButton {
+  background: none;
+  border: none;
+  outline: none;
+}
+.sizeDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.accordionTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.filterCard {
+  margin-top: 5%;
+}
+.filterContainer {
+  margin-top: 5%;
+}
+.cardBody1 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .categoryDiv {
+    display: block;
+  }
+}
+.loadDiv {
+  text-align: center;
+  margin-top: 3%;
+}
+.loadButton {
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 48px;
+  left: 793px;
+  top: 2100px;
+
+  /* gradient */
+
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.cardTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #0d1222;
+}
+.cardBody1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5%;
+}
+.cardTitle1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.cardTitles {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #0d1222;
+}
+.productCard {
+  border: none;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 767px) {
+  .col1 {
+    order: 2;
+  }
+  .col2 {
+    order: 1;
+  }
+  .tshirtText {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .filterDiv {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,97 @@
+.footerSecondPartCol1 {
+  margin-left: 15%;
+}
+.footerPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 5%;
+  color: #f4f4f4;
+  padding-right: 35%;
+}
+.footerHomeListEmail {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 0px;
+  padding-top: 0px;
+  color: #f4f4f4;
+  margin-bottom: 3%;
+}
+.footerLoginButton {
+  border: none;
+  /* background: none; */
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 34px;
+  /* gap: 10px; */
+
+  width: 180px;
+  height: 48px;
+
+  background-color: #ffffff !important;
+  /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7d89ff;
+}
+.footerHome {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  padding-bottom: 3%;
+
+  color: #ffffff;
+}
+.footerHomeList {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 3%;
+
+  color: #f4f4f4;
+}
+.footerButtonDiv {
+  padding-top: 3%;
+}
+.footerCon {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.footerContainer {
+  background-color: #393e46;
+}
+@media (max-width: 1199px) {
+  .footerSecondPart {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .footerCol3 {
+    margin-top: 4%;
+  }
+  .footerCol4 {
+    margin-top: 4%;
+  }
+}
+@media (max-width: 576px) {
+  .footerCol1 {
+    margin-top: 4%;
+  }
+  .footerCol2 {
+    margin-top: 4%;
+  }
+}

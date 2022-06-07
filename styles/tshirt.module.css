@@ -1,0 +1,350 @@
+.tshirtImage {
+  margin: auto;
+}
+.detailAccordion {
+  display: none;
+}
+.oblongersTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  color: #ffffff;
+}
+.oblongersColor {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.divMain {
+  display: flex;
+  justify-content: space-between;
+}
+.blackDiv {
+  background-color: black;
+}
+.Col3 {
+  text-align: end;
+}
+.oblongerPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 10px;
+  color: #dddddd;
+  margin-top: 3%;
+}
+.orderButton {
+  border: none;
+  /* background: none; */
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 34px;
+
+  width: 180px;
+  height: 48px;
+
+  background-color: #ffffff !important;
+  /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7d89ff;
+}
+.tshirtContainer {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  margin-top: 6%;
+}
+.tshirtCon {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.Col2 {
+  padding-left: 16%;
+}
+.colorDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.sizeDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  margin-top: 4%;
+}
+.blackCircle {
+  padding-right: 5px;
+}
+.colorText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.sizeImage {
+  padding-right: 5px;
+}
+.sizeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.dollar {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+}
+.buttoNDiv {
+  padding-left: 10px;
+}
+.likes {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Light Medium */
+
+  color: #dddddd;
+}
+@media (max-width: 1199px) {
+  .oblongersTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .oblongersTitle {
+    font-size: 30px;
+  }
+  .colorDiv {
+    margin-top: -3%;
+    padding-left: 0px;
+  }
+  .sizeDiv {
+    padding-left: 0px;
+  }
+  .oblongerPara {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  .buttoNDiv {
+    padding-left: 0px;
+  }
+  .colorText {
+    font-size: 13px;
+  }
+  .sizeText {
+    font-size: 13px;
+  }
+  .dollar {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .oblongersTitle {
+    text-align: center;
+    font-size: 58px;
+    margin-top: 4%;
+  }
+  .colorDiv {
+    padding-left: 10px;
+  }
+  .sizeDiv {
+    padding-left: 10px;
+  }
+  .oblongerPara {
+    padding-left: 10px;
+  }
+  .buttoNDiv {
+    padding-left: 10px;
+  }
+
+  .Col2 {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 576px) {
+  .oblongersTitle {
+    font-size: 30px;
+  }
+  .Col2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .colorDiv {
+    display: block;
+    /* margin: auto; */
+    text-align: center;
+  }
+  .colorDiv {
+    display: none;
+  }
+  .sizeDiv {
+    display: none;
+  }
+  .oblongerPara {
+    display: none;
+  }
+  .buttoNDiv {
+    display: none;
+  }
+  .detailAccordion {
+    display: block;
+  }
+  .accordionColorDiv {
+    display: flex;
+    justify-content: space-between;
+  }
+  .blacksCircle {
+    padding-right: 5px;
+  }
+  .colorsText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    /* margin-left: 11%; */
+
+    color: black;
+  }
+  .likess {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    /* Light Medium */
+
+    color: #dddddd;
+  }
+  .sizesDiv {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+  }
+  .sizesText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 27px;
+    /* identical to box height */
+
+    /* White color */
+
+    color: black;
+  }
+  .sizesImage {
+    padding-right: 5px;
+  }
+  .colorsDiv {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .dollars {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 60px;
+    /* identical to box height */
+
+    /* Secondary Color */
+
+    color: black;
+  }
+  .oblongersPara {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
+    color: grey;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  .orderButton {
+    border: none;
+    /* background: none; */
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 34px;
+    margin-left: 3%;
+    width: 180px;
+    height: 48px;
+    margin-bottom: 3%;
+    background-color: gray !important;
+    /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); */
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+  }
+  .detail {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 420px) {
+  .accordionColorDiv {
+    display: block;
+    /* padding-top: 2%; */
+  }
+  .starImage {
+    margin-top: 3%;
+  }
+  .likess {
+    margin-top: 3%;
+  }
+  .sizesDiv {
+    display: block;
+  }
+  .oblongersPara {
+    padding-left: 0px;
+  }
+}

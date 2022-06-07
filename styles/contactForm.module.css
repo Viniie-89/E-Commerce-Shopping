@@ -1,0 +1,49 @@
+.contactForm {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.sendMessageText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 3%;
+  color: #0d1222;
+}
+.contactFormCon {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.buttonSend {
+  width: 180px;
+  height: 48px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #ffffff;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+}
+.buttonDiv {
+  margin-top: 5%;
+  text-align: center;
+}
+.floatingText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Medium */
+
+  color: #969696;
+  margin-bottom: 3%;
+}

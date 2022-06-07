@@ -1,0 +1,207 @@
+.bannerTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 75px;
+  /* or 156% */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.bannerCol1 {
+  padding-top: 9%;
+}
+.bannerDetail {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Light Medium */
+
+  color: #dddddd;
+}
+.bannerButton {
+  border: none;
+  /* background: none; */
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 34px;
+  /* gap: 10px; */
+
+  width: 180px;
+  height: 48px;
+
+  background-color: #ffffff !important;
+  /* box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7d89ff;
+}
+.listH6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.shirtDiv {
+  padding-left: 10px;
+  padding-top: 20%;
+}
+.bannerSecondPart {
+  /* margin-right: 3%; */
+  margin-left: 15%;
+}
+.bannerCon {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+.bannerContainer {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+.girlImg {
+  margin-left: 30%;
+}
+@media (max-width: 1199px) {
+  .girlImg {
+    width: 200%;
+    height: 250%;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .bannerTitle {
+    font-size: 30px;
+    line-height: 55px;
+    /* text-align: center; */
+  }
+  .bannerDetail {
+    font-size: 16px;
+    /* text-align: center; */
+  }
+  .girlImg {
+    height: 250%;
+    width: 200%;
+    /* margin-left: 30%; */
+  }
+
+  .bannerCol1 {
+    padding-top: 4%;
+  }
+  .suitImg {
+    height: 150%;
+    width: 150%;
+  }
+  .shirtDiv {
+    margin-left: -3%;
+  }
+}
+@media (max-width: 767px) {
+  .girlImg {
+    width: 150%;
+    margin-top: 15%;
+    margin-left: 30%;
+    /* padding-left: -30px; */
+  }
+  .bannerSecondPart {
+    display: none;
+  }
+  .bannerTitle {
+    text-align: center;
+  }
+  .bannerDetail {
+    text-align: center;
+  }
+  .bannerButtons {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .girlImg {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (max-width: 1329px) {
+  .girlImg {
+    margin-left: 10%;
+  }
+}
+/* last component css */
+.modelContainer {
+  margin-top: 5%;
+  padding-bottom: 6%;
+}
+.modelH3 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.modelPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-right: 90px;
+
+  color: #646464;
+}
+.buttonLogin {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 34px;
+}
+.ShirtImage {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .modelH3 {
+    font-size: 30px;
+  }
+  .modelPara {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .modelH3 {
+    text-align: center;
+  }
+  .modelPara {
+    text-align: center;
+    padding-right: 0px;
+  }
+  .modelButton {
+    text-align: center;
+  }
+  .Modelcol2 {
+    margin-top: 3%;
+  }
+}

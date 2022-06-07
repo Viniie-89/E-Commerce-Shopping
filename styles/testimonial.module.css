@@ -1,0 +1,72 @@
+.testimonialText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.testimonialContainer {
+  margin-top: 5%;
+}
+.card1Div {
+  display: flex;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.testimonialDetail {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium Dark */
+
+  color: #646464;
+}
+.testimonailCardBody {
+  padding-left: 5%;
+}
+.clientDetail {
+  padding-left: 3%;
+}
+.starDiv {
+  padding-left: 5%;
+}
+.cols {
+  padding-top: 4%;
+}
+.testimonialTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #000000;
+}
+.testimonialTitle1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.card {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "image": "../Images/categoryImage1.png",
+    "title": "Tshirts"
+  },
+  {
+    "id": 1,
+    "image": "../Images/categoryImage2.png",
+    "title": "Jackets"
+  },
+  {
+    "id": 2,
+    "image": "../Images/categoryImage1.png",
+    "title": "Tshirts"
+  },
+  {
+    "id": 3,
+    "image": "../Images/categoryImage2.png",
+    "title": "Jackets"
+  }
+]

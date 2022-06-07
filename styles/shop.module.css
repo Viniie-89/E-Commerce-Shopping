@@ -1,0 +1,90 @@
+.homeh5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 2%;
+  margin-top: 1%;
+  color: #ffffff;
+}
+.shoph5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1%;
+  color: #ffffff;
+}
+.col2shop {
+  margin-left: -3% !important;
+  margin-top: 3%;
+}
+.slash {
+  color: white;
+  margin-right: 2%;
+}
+.homeDiv {
+  display: flex;
+  margin-top: -2%;
+}
+.shopTextDiv {
+  margin-top: 9%;
+}
+.shopText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.sliderTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 10%;
+
+  color: #ffffff;
+}
+.shopContainer {
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+.shopCon {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.imageDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .shopText {
+    text-align: center;
+    margin-bottom: 10%;
+    line-height: 2px;
+    /* margin-top: 0px; */
+  }
+  .homeDiv {
+    justify-content: center;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 420px) {
+  .shopContainer {
+    padding-bottom: 6%;
+  }
+}

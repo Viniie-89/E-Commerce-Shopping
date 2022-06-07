@@ -1,0 +1,204 @@
+.loginImage {
+  height: 100%;
+  width: 100%;
+}
+.loginContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+.gradientDiv {
+  position: absolute;
+  top: 1px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(107, 120, 255, 0.99) 0%,
+    #8609e9 48.55%,
+    rgba(134, 9, 233, 0) 97.4%
+  );
+}
+.loginDiv {
+  display: flex;
+  margin-top: 10%;
+}
+.homeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 3%;
+  color: #ffffff;
+}
+.slash {
+  color: white;
+  margin-right: 3%;
+}
+.contactText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* White color */
+
+  color: #ffffff;
+}
+.myAccountText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 1%;
+
+  color: #ffffff;
+}
+.signupText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 6%;
+  color: #ffffff;
+}
+.loginText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  margin-top: 4%;
+  color: #ffffff;
+}
+#signupLink {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 21px;
+  cursor: pointer;
+
+  color: #ffffff;
+}
+.googleButton {
+  background-color: white;
+  border: none;
+  display: flex;
+  margin-right: 3%;
+  width: 180px;
+  height: 48px;
+  padding-top: 1%;
+
+  justify-content: space-evenly;
+}
+.socialButtonDiv {
+  display: flex;
+  margin-top: 4%;
+}
+.facebookButton {
+  background-color: white;
+  border: none;
+  display: flex;
+  width: 180px;
+  height: 48px;
+  justify-content: space-evenly;
+  padding-top: 1%;
+}
+.googleText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #0d1222;
+}
+.loginFormInput {
+  margin-top: 4%;
+}
+.emailText {
+  /* width: 588px; */
+  /* height: 48px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #dddddd; */
+}
+.emailText::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #dddddd;
+}
+.loginFormDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.emailPlaceholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.passwordPlaceholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.rememberPlaceholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 2px;
+  color: #f4f4f4;
+}
+.passWordText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #f4f4f4;
+}
+.loginButton {
+  width: 180px;
+  height: 48px;
+  left: 528px;
+  top: 730px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ab40ff;
+}
+.loginButtonDiv {
+  text-align: end;
+}

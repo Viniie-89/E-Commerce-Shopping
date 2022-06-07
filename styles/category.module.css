@@ -1,0 +1,117 @@
+.categoryContainer {
+  margin-top: 6%;
+}
+.categoryTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Primary Color */
+
+  color: #5463ff;
+}
+.categoryText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.categoryPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-right: 40%;
+
+  color: #646464;
+}
+.cardBody {
+  position: absolute;
+  width: 156px;
+  height: 42px;
+  left: 250px;
+  top: 20px;
+  background: #5463ff;
+}
+.cardCol {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.sliderImage {
+  /* height: 100%; */
+  width: 100%;
+}
+.cardTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .categoryTitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .categoryText {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .categoryPara {
+    font-size: 15px;
+    max-width: 450px;
+  }
+  .cardBody {
+    left: 62px;
+  }
+}
+@media (max-width: 767px) {
+  .categoryTitle {
+    text-align: center;
+  }
+  .categoryText {
+    text-align: center;
+  }
+  .categoryPara {
+    text-align: center;
+    margin: auto;
+    padding-right: 0px;
+  }
+  .cardCol {
+    margin-top: 5%;
+  }
+  .cardBody {
+    left: 190px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .cardBody {
+    left: 200px;
+  }
+}
+@media (max-width: 1200px) {
+  .cardBody {
+    left: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .cardBody {
+    left: 183px;
+  }
+}
+@media (max-width: 420px) {
+  .cardBody {
+    left: 104px;
+  }
+}

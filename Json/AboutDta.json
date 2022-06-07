@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "../Images/aboutImage1.png",
+    "title": "Profile",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper",
+    "description1": "Klara is an AI powered automated Solution Builder of Growth Strategy, Branding and Digital marketing planning for your business."
+  },
+  {
+    "id": 2,
+    "image": "../Images/aboutImage2.png",
+    "title": "Our Mission",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus ullamcorper ",
+    "description1": "Klara is an AI powered automated Solution Builder of Growth Strategy, Branding and Digital marketing planning for your business."
+  }
+]

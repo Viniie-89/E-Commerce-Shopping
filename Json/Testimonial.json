@@ -1,0 +1,19 @@
+[
+  {
+    "id": 0,
+    "image": "../Images/testimonialImage1.png",
+    "title1": "Friskidia",
+    "title": "Client",
+    "image1": "../Images/cardStarImage.png",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus"
+  },
+
+  {
+    "id": 1,
+    "image": "../Images/testimonialImage2.png",
+    "title1": "Frinkidia",
+    "title": "Client",
+    "image1": "../Images/cardStarImage.png",
+    "detail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum dapibus luctus"
+  }
+]

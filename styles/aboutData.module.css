@@ -1,0 +1,69 @@
+.aboutDataContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.aboutDataTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  max-width: 501px;
+
+  color: #0d1222;
+}
+.aboutDatadesc1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  max-width: 501px;
+
+  color: #646464;
+}
+.featuresImages {
+  margin-top: 5%;
+}
+.featuresDescriptions {
+  padding-left: 5%;
+  margin-top: 5%;
+}
+.aboutDtaimg1 {
+  height: 100%;
+  width: 100%;
+}
+.absoluteImage2 {
+  position: absolute;
+  margin-top: -5%;
+}
+.aboutDtaimg2 {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .featuresImages {
+    order: 1;
+  }
+  .featuresDescriptions {
+    order: 2;
+  }
+  .featuresDescriptionAbout {
+    order: 4;
+  }
+  .featuresImageAbout {
+    order: 3;
+  }
+  .aboutDataTitle {
+    text-align: center;
+    margin: auto;
+    padding-top: 2%;
+  }
+  .aboutDatadesc1 {
+    text-align: center;
+    margin: auto;
+  }
+  .featuresImageAbout {
+    margin-top: 4%;
+  }
+}

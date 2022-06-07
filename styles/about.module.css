@@ -1,0 +1,145 @@
+.homeDiv {
+  display: flex;
+  /* margin-top: 3%; */
+}
+.homeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 4%;
+  color: #ffffff;
+  margin-top: 1%;
+}
+.slash {
+  color: white;
+  margin-right: 4%;
+}
+.aboutUsText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1%;
+
+  color: #ffffff;
+}
+.aboutUsTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+  margin-top: 4%;
+}
+.aboutCon {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.aboutPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 3%;
+  color: #f4f4f4;
+}
+.col2Image {
+  text-align: end;
+  /* position: absolute; */
+}
+/* .aboutContainer {
+  border-bottom-right-radius: 101%;
+} */
+.aboutContainer {
+  position: relative;
+  bottom: 0px;
+  /* border-bottom: none !important; */
+  display: inline-block;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+
+.aboutContainer:after {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  border-top: 190px solid white;
+  border-right: 1680px solid transparent;
+}
+
+.aboutImageBackground {
+  z-index: 123667838;
+  text-align: end;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .homeDiv {
+    justify-content: center;
+    display: flex;
+  }
+  .aboutUsTitle {
+    text-align: center;
+    margin-top: 0px;
+  }
+  .aboutImageBackground {
+    text-align: center;
+  }
+  .aboutPara {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .aboutUsTitle {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .aboutPara {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .aboutPara {
+    font-size: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .homeDiv {
+    display: none;
+  }
+  .aboutPara {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .aboutContainer:after {
+    position: none;
+    transform: none;
+    right: none;
+    bottom: none;
+    content: none;
+    border-top: none;
+    border-right: none;
+  }
+  .aboutContainer {
+    /* position: relative;
+    background-color: blue;
+    border: 1px solid silver; */
+    /* display: inline-block; */
+    background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  }
+}
