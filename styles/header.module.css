@@ -37,3 +37,9 @@
 .cardImage:hover {
   fill: brown !important;
 }
+.searchForm:focus {
+  box-shadow: none !important;
+}
+.searchForm:active {
+  box-shadow: none !important;
+}

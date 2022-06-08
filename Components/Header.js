@@ -47,7 +47,7 @@ const Header = () => {
               <Nav.Link
                 href="/About"
                 className={style.navlink}
-                active={isActive === "/AboutUs"}
+                active={isActive === "/About"}
               >
                 About Us
               </Nav.Link>
@@ -93,7 +93,7 @@ const Header = () => {
                   <FormControl
                     type="search"
                     placeholder="Search"
-                    className="me-2"
+                    className={style.searchForm}
                     aria-label="Search"
                   />
                   <div className={style.searchImageDiv}>

@@ -6,6 +6,7 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import { Row, Col, Container, Form } from "react-bootstrap";
 import style from "../styles/login.module.css";
+import Link from "next/link";
 const Login = () => {
   return (
     <>
@@ -31,7 +32,9 @@ const Login = () => {
                 <h2 className={style.loginText}>Login</h2>
                 <h6 className={style.signupText}>
                   Don't have an account ?
-                  <span id={style.signupLink}>Sign Up</span>
+                  <Link href="/SignUp">
+                    <span id={style.signupLink}>Sign Up</span>
+                  </Link>
                 </h6>
 
                 <div className={style.socialButtonDiv}>
@@ -53,6 +56,7 @@ const Login = () => {
                     <h6 className={style.googleText}>Facebook</h6>
                   </button>
                 </div>
+
                 <Form className={style.loginFormInput}>
                   <Form.Group
                     className="mb-3"

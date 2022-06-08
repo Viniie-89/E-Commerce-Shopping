@@ -1,0 +1,258 @@
+.homeDiv {
+  display: flex;
+  margin-top: 4%;
+}
+.homeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 4%;
+  color: #ffffff;
+  margin-top: 1%;
+}
+.slash {
+  color: white;
+  margin-right: 4%;
+}
+.aboutUsText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 1%;
+
+  color: #ffffff;
+}
+.aboutUsTitle {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+  margin-top: 4%;
+}
+.aboutCon {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.aboutPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 3%;
+  color: #f4f4f4;
+}
+.col2Image {
+  text-align: end;
+  /* position: absolute; */
+}
+/* .aboutContainer {
+    border-bottom-right-radius: 101%;
+  } */
+.aboutContainer {
+  position: relative;
+  bottom: 0px;
+  /* border-bottom: none !important; */
+  display: inline-block;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+
+.aboutContainer:after {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  border-top: 339px solid white;
+  border-right: 2201px solid transparent;
+}
+
+.aboutImageBackground {
+  z-index: 123667838;
+  text-align: center;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+.myProfileCard {
+  height: 407px;
+  width: 486px;
+  float: right;
+  background: #ffffff;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 10%;
+  padding-bottom: 5%;
+  margin-top: 4%;
+}
+.cardTitle1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.cardTitle2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.updateButton {
+  width: 180px;
+  height: 48px;
+  left: 988px;
+  top: 439px;
+  border: none;
+
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+}
+.buttonDiv {
+  position: absolute;
+  top: 131px;
+  left: 220px;
+}
+.imageEditButton {
+  width: 40px;
+  height: 40px;
+  background: rgba(84, 99, 255, 0.5);
+  border: none;
+  border-radius: 50px;
+}
+
+.numberCol {
+  margin-top: 20%;
+}
+.colForm2 {
+  padding-left: 12%;
+}
+.formContainer {
+  margin-bottom: 4%;
+}
+.firstnamelabel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.firstNamePlaceholder::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+.firstNamePlaceholder {
+  width: 588px;
+  height: 48px;
+}
+.addressTextArea {
+  width: 588px;
+  height: 126px;
+}
+.addressTextArea::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+/* .secondUpdatebuttonDiv {
+  text-align: end;
+} */
+.secondUpdateButtons {
+  width: 180px;
+  height: 48px;
+  border: none;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+}
+.numberPlaceholder::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+.numberPlaceholder {
+  width: 486px;
+  height: 48px;
+}
+.genderForm {
+  margin-top: 4%;
+}
+.genderLabel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #0d1222;
+}
+.secondUpdatebuttonDiv {
+  margin-top: 5%;
+}
