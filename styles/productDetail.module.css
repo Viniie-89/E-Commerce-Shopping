@@ -1,0 +1,500 @@
+.productDiv {
+  display: flex;
+  margin-top: 3%;
+}
+.homeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 2%;
+
+  color: #0d1222;
+}
+.slash1 {
+  margin-right: 2%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.shopText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 3%;
+  color: #0d1222;
+}
+.slash2 {
+  margin-right: 2%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.tshirtText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.productDetailCol {
+  margin-top: 3%;
+}
+.productDetailImageDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.imageProduct {
+  /* height: 100%; */
+  width: 100%;
+}
+.smartText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.detailCol {
+  margin-top: 3%;
+  padding-left: 6%;
+  padding-right: 0px;
+}
+.smartPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium */
+
+  color: #969696;
+}
+.starText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  /* Medium Dark */
+
+  color: #646464;
+}
+.colorDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+.colorText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.blackCircle {
+  padding-right: 5px;
+}
+.likes {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.stockText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Medium Dark */
+
+  color: #646464;
+}
+.smallButton {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50px;
+  background: #f4f4f4;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 2%;
+  color: #000000;
+  margin-top: 2%;
+}
+.smallButton:hover {
+  background: #5463ff;
+  color: white;
+  font-weight: bolder;
+}
+.sizeDiv {
+  margin-top: 3%;
+}
+.incrementDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+.quantityText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.increDecreButton {
+  width: 142px;
+  height: 48px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #969696;
+}
+.displayButton {
+  display: flex;
+  justify-content: space-evenly;
+  width: 142px;
+  height: 48px;
+
+  /* White color */
+
+  background: #ffffff;
+  /* Medium */
+
+  border: 1px solid #969696;
+}
+.incrementButton {
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+.numberDynamic {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 15px;
+  color: #0d1222;
+}
+.dollarH6 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 18%;
+
+  color: #0d1222;
+}
+.checkoutButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.checkoutButton {
+  width: 520px;
+  height: 47px;
+
+  border: none;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+}
+.bagButton {
+  width: 48px;
+  height: 48px;
+  border: none;
+
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+.sizeText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+/* review */
+.ReviewContainer {
+  background: #f4f4f4;
+  margin-top: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.descriptionReviewSelector {
+  display: flex;
+  justify-content: center;
+}
+.descriptionH6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin-right: 3%;
+
+  color: #969696;
+}
+.ReviewH6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.descriptionH6:hover {
+  color: #5463ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bolder !important;
+}
+.descriptionH6:active {
+  color: #5463ff !important;
+  text-decoration: underline !important;
+}
+.ReviewH6:active {
+  color: #5463ff;
+  text-decoration: underline !important;
+}
+.ReviewH6:hover {
+  color: #5463ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bolder !important;
+}
+.detailProductText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 2%;
+  color: #0d1222;
+}
+.detailList {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  /* Medium Dark */
+
+  color: #646464;
+}
+.sameProductText {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+
+  color: #0d1222;
+}
+.sameProductContainer {
+  margin-top: 4%;
+}
+.sameProductCard {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.cardTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #0d1222;
+}
+.cardBody1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 5%;
+}
+.detailAccordion {
+  display: none;
+}
+.cardTitle1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* Medium */
+
+  color: #969696;
+}
+.cardTitles {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #0d1222;
+}
+.productCard {
+  /* margin-top: 15%; */
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.sameProductButtonDiv {
+  text-align: center;
+  margin-bottom: 3%;
+}
+.seemoreText {
+  width: 180px;
+  height: 48px;
+  border: none;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Secondary Color */
+
+  color: #ffffff;
+}
+.image1 {
+  height: 100%;
+  width: 95%;
+}
+@media (max-width: 992px) {
+  .detailCol {
+    padding-left: 0px;
+  }
+  .smartText {
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .smartPara {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .detailCol {
+    padding-left: 5%;
+  }
+  .colorText {
+    font-size: 15px;
+  }
+  .blackCircle {
+    margin-top: 1%;
+  }
+  .likes {
+    font-size: 15px;
+  }
+  .stockText {
+    font-size: 15px;
+  }
+  .sizeText {
+    font-size: 15px;
+  }
+  .quantityText {
+    font-size: 15px;
+  }
+  .dollarH6 {
+    font-size: 30px;
+    margin-top: 30%;
+  }
+  .bagButton {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 567px) {
+  .detailAccordion {
+    display: block;
+  }
+}
+.conditionDiv {
+  margin-top: 3%;
+}
+.reviewDivs {
+  margin-left: -98%;
+}

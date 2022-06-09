@@ -15,6 +15,7 @@ import RecommendProduct from "../Components/RecommendProduct";
 import style from "../styles/recommendProduct.module.css";
 import productData from "../Json/ProductData.json";
 import Flip from "react-reveal";
+import Link from "next/link";
 const Shop = () => {
   const [data, setData] = useState(productData);
   const settings = {

@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Container fluid>
+    <Container fluid className={style.headerContainer}>
       {/* <Container> */}
       <Navbar collapseOnSelect expand="lg" variant="dark" className={style.nav}>
         <Container>

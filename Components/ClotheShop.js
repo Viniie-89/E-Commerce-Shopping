@@ -5,6 +5,7 @@ import { Container, Row, Col, Accordion, Form, Card } from "react-bootstrap";
 import style from "../styles/clotheShop.module.css";
 import cloth from "../Json/ClotheShop.json";
 import Flip from "react-reveal";
+import Link from "next/link";
 const ClotheShop = () => {
   return (
     <Container fluid className={style.filterContainer}>
@@ -149,7 +150,9 @@ const ClotheShop = () => {
                         className={style.filterCard}
                       >
                         <Card className={style.productCard}>
-                          <img src={elem.image} />
+                          <Link href="/ProductDetail">
+                            <img src={elem.image} />
+                          </Link>
                           <Card.Body className={style.cardBody1}>
                             <Card.Title className={style.cardTitle}>
                               {elem.title}

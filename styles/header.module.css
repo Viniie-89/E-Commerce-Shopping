@@ -43,3 +43,6 @@
 .searchForm:active {
   box-shadow: none !important;
 }
+.headerContainer {
+  box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+}
