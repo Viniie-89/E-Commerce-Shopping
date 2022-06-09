@@ -3,6 +3,7 @@
 import React from "react";
 import { Row, Col, Container, Accordion } from "react-bootstrap";
 import style from "../styles/productDetail.module.css";
+import Link from "next/link";
 const ProductD = () => {
   return (
     <Container fluid>
@@ -116,7 +117,9 @@ const ProductD = () => {
               </div>
             </div>
             <div className={style.checkoutButtonDiv}>
-              <button className={style.checkoutButton}>Checkout</button>
+              <Link href="/CheckOut">
+                <button className={style.checkoutButton}>Checkout</button>
+              </Link>
               <button className={style.bagButton}>
                 <img src="../Images/bagImage.png" />
               </button>

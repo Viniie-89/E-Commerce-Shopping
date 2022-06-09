@@ -59,7 +59,11 @@ const Header = () => {
                 Contact
               </Nav.Link>
 
-              <Nav.Link className={style.navlink} active={isActive === "/Cart"}>
+              <Nav.Link
+                href="/WishList"
+                className={style.navlink}
+                active={isActive === "/WishList"}
+              >
                 <div className={style.cartDiv}>
                   <img
                     src="../Images/cardts.svg"

@@ -187,3 +187,31 @@ a {
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
 }
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding: 1rem 1.25rem; */
+  font-size: 1rem;
+  color: #5463ff !important;
+  text-align: left;
+  background-color: #f4f4f4 !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("../public/Images/accordionButton.png") !important;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
