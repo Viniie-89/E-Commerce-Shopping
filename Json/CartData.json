@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "image1": "../Images/deleteImage.png",
+    "image2": "../Images/cartTshirt.png",
+    "tshirtTitle": "Smart-Tshirt",
+    "tshirtColor": "Color:White",
+    "Price": "$40 USD",
+    "PriceTitle": "Price",
+    "stock": "(1304)",
+    "stockTitle": "stockTitle",
+    "button": "Add to Cart"
+  },
+  {
+    "id": 1,
+    "image1": "../Images/deleteImage.png",
+    "image2": "../Images/cartTshirt.png",
+    "tshirtTitle": "Smart-Tshirt",
+    "tshirtColor": "Color:White",
+    "Price": "$40 USD",
+    "PriceTitle": "Price",
+    "stock": "(1304)",
+    "stockTitle": "stockTitle",
+    "button": "Add to Cart"
+  },
+  {
+    "id": 2,
+    "image1": "../Images/deleteImage.png",
+    "image2": "../Images/cartTshirt.png",
+    "tshirtTitle": "Smart-Tshirt",
+    "tshirtColor": "Color:White",
+    "Price": "$40 USD",
+    "PriceTitle": "Price",
+    "stock": "(1304)",
+    "stockTitle": "stockTitle",
+    "button": "Add to Cart"
+  },
+  {
+    "id": 3,
+    "image1": "../Images/deleteImage.png",
+    "image2": "../Images/cartTshirt.png",
+    "tshirtTitle": "Smart-Tshirt",
+    "tshirtColor": "Color:White",
+    "Price": "$40 USD",
+    "PriceTitle": "Price",
+    "stock": "(1304)",
+    "stockTitle": "stockTitle",
+    "button": "Add to Cart"
+  }
+]

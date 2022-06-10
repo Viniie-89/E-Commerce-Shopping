@@ -3,6 +3,9 @@
 
   /* justify-content: space-around; */
 }
+.col2 {
+  padding-left: 5%;
+}
 .categoryAccordion {
   margin-left: 0px;
 }
@@ -250,4 +253,7 @@
   .filterDiv {
     justify-content: center;
   }
+}
+.shopImage {
+  cursor: pointer;
 }

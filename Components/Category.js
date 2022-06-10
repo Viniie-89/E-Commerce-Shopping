@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import category from "../Json/categoryData.json";
 import "animate.css";
-import Fade from "react-reveal/Fade";
+
 const Category = () => {
   const settings = {
     dots: true,
@@ -35,53 +35,45 @@ const Category = () => {
   return (
     <Container fluid className={categoryStyles.categoryContainer}>
       <Container>
-        <Fade bottom>
-          <Row>
-            <Col xl={8} lg={8} md={8} sm={12}>
-              <h6 className={categoryStyles.categoryTitle}>
-                Choose your category
-              </h6>
-              <h3 className={categoryStyles.categoryText}>Categories Style</h3>
-              <p className={categoryStyles.categoryPara}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget
-                gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus
-                ullamcorper.
-              </p>
-            </Col>
+        <Row>
+          <Col xl={8} lg={8} md={8} sm={12}>
+            <h6 className={categoryStyles.categoryTitle}>
+              Choose your category
+            </h6>
+            <h3 className={categoryStyles.categoryText}>Categories Style</h3>
+            <p className={categoryStyles.categoryPara}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget
+              gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus
+              ullamcorper.
+            </p>
+          </Col>
 
-            <Col
-              xl={4}
-              lg={4}
-              md={4}
-              sm={12}
-              className={categoryStyles.cardCol}
-            >
-              <div>
-                <Slider {...settings} className="middleCat">
-                  {category.map((elem) => {
-                    return (
-                      <>
-                        <Card>
-                          <img
-                            src={elem.image}
-                            height={230}
-                            width={360}
-                            className={categoryStyles.sliderImage}
-                          />
-                          <Card.Body className={categoryStyles.cardBody}>
-                            <Card.Title className={categoryStyles.cardTitle}>
-                              {elem.title}
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </>
-                    );
-                  })}
-                </Slider>
-              </div>
-            </Col>
-          </Row>
-        </Fade>
+          <Col xl={4} lg={4} md={4} sm={12} className={categoryStyles.cardCol}>
+            <div>
+              <Slider {...settings} className="middleCat">
+                {category.map((elem) => {
+                  return (
+                    <>
+                      <Card>
+                        <img
+                          src={elem.image}
+                          height={230}
+                          width={360}
+                          className={categoryStyles.sliderImage}
+                        />
+                        <Card.Body className={categoryStyles.cardBody}>
+                          <Card.Title className={categoryStyles.cardTitle}>
+                            {elem.title}
+                          </Card.Title>
+                        </Card.Body>
+                      </Card>
+                    </>
+                  );
+                })}
+              </Slider>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Container>
   );
