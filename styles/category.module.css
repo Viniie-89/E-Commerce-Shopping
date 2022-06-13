@@ -58,6 +58,7 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  margin-top: -3%;
 }
 @media (max-width: 992px) {
   .categoryTitle {
@@ -113,5 +114,17 @@
 @media (max-width: 420px) {
   .cardBody {
     left: 104px;
+  }
+  .categoryPara {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 5%;
+  }
+  .cardBody {
+    margin-left: -21%;
+  }
+  .cardTitle {
+    margin-top: -4%;
+    padding-left: 20%;
   }
 }

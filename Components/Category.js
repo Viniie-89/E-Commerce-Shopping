@@ -20,7 +20,7 @@ const Category = () => {
     arrows: true,
     responsive: [
       {
-        breakpoint: 577,
+        breakpoint: 578,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

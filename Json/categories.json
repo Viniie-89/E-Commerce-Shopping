@@ -1,0 +1,223 @@
+[
+  {
+    "id": 1,
+    "categoryname": "Tshirts",
+    "categorydetail": [
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "categoryname": " jackets",
+    "categorydetail": [
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "categoryname": "shirts",
+    "categorydetail": [
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "categoryname": "jeans",
+    "categorydetail": [
+      {
+        "image": "../Images/productImage2.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage1.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage3.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      },
+      {
+        "image": "../Images/productImage4.png",
+        "title": "smart Tshirt",
+        "title1": "40$",
+        "title2": "Best Quality",
+        "star": "../Images/starImage.png"
+      }
+    ]
+  }
+]

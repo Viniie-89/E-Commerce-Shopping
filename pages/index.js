@@ -14,7 +14,7 @@ import Testimonial from "../Components/Testimonial";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { Typewriter } from "react-simple-typewriter";
 import "animate.css";
 export default function Home() {
   const settings = {
@@ -26,6 +26,7 @@ export default function Home() {
     dots: false,
     arrows: true,
   };
+
   return (
     <>
       <Header />
@@ -40,9 +41,22 @@ export default function Home() {
               xs={12}
               className={styles.bannerCol1}
             >
-              <h5 className={styles.bannerTitle}>
-                Get the Latest Dress Models From Us
-              </h5>
+              <div className={styles.typewriterDiv}>
+                <h5 className={styles.bannerTitle} style={{ color: "white" }}>
+                  Get the Latest Dress Models&nbsp;
+                  <span>
+                    <Typewriter
+                      loop
+                      cursor
+                      cursorStyle="_"
+                      typeSpeed={70}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                      words={["from us", "from us"]}
+                    />
+                  </span>
+                </h5>
+              </div>
 
               <p className={styles.bannerDetail}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget
@@ -71,102 +85,105 @@ export default function Home() {
                   className={styles.bannerSecondPart}
                 >
                   <h6 className={styles.listH6}>More List</h6>
+                  <div className="animate__animated animate__zoomIn animate-duration: 3s">
+                    <div>
+                      <img
+                        src="../Images/suit.png"
+                        height={268}
+                        width={173}
+                        className={styles.suitImg}
+                      />
+                    </div>
 
-                  <div>
-                    <img
-                      src="../Images/suit.png"
-                      height={268}
-                      width={173}
-                      className={styles.suitImg}
-                    />
-                  </div>
-
-                  <div className={styles.shirtDiv}>
-                    <img
-                      src="../Images/shirt.png"
-                      height={219}
-                      width={146}
-                      className={styles.shirtImg}
-                    />
+                    <div className={styles.shirtDiv}>
+                      <img
+                        src="../Images/shirt.png"
+                        height={219}
+                        width={146}
+                        className={styles.shirtImg}
+                      />
+                    </div>
                   </div>
                 </Col>
 
                 <Col xl={4} lg={4} md={4} sm={6} xs={12}>
-                  <div className={styles.imageGirl}>
-                    <img
-                      src="../Images/girlImage1.png"
-                      height={522}
-                      width={400}
-                      className={styles.girlImg}
-                    />
-                  </div>
+                  <div className="animate__animated animate__zoomIn animate-duration: 3s">
+                    <div className={styles.imageGirl}>
+                      <img
+                        src="../Images/girlImage1.png"
+                        height={522}
+                        width={400}
+                        className={styles.girlImg}
+                      />
+                    </div>
 
-                  <div className={styles.imageSlider}>
-                    <div>
-                      <Slider {...settings} className="bannerArrow">
-                        <div>
-                          <img
-                            src="../Images/bannerSlider1.png"
-                            className={styles.firstSliderImage}
-                          ></img>
-                        </div>
+                    <div className={styles.imageSlider}>
+                      <div>
+                        <Slider {...settings} className="bannerArrow">
+                          <div>
+                            <img
+                              src="../Images/bannerSlider1.png"
+                              className={styles.firstSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider1.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider1.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider1.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider1.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
 
-                        <div>
-                          <img
-                            src="../Images/bannerSlider2.png"
-                            className={styles.secondSliderImage}
-                          ></img>
-                        </div>
-                      </Slider>
+                          <div>
+                            <img
+                              src="../Images/bannerSlider2.png"
+                              className={styles.secondSliderImage}
+                            ></img>
+                          </div>
+                        </Slider>
+                      </div>
                     </div>
                   </div>
                 </Col>

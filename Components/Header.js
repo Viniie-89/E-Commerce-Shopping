@@ -12,6 +12,8 @@ import {
   NavLink,
 } from "react-bootstrap";
 import style from "../styles/header.module.css";
+import wishlist from "../public/Images/cardts.svg";
+import Link from "next/link";
 const Header = () => {
   const [isActive, setIsActive] = useState("");
 
@@ -25,7 +27,9 @@ const Header = () => {
       <Navbar collapseOnSelect expand="lg" variant="dark" className={style.nav}>
         <Container>
           <div>
-            <img src="../images/mangcoding.png" />
+            <Link href="/">
+              <img src="../images/mangcoding.png" className={style.logoImage} />
+            </Link>
           </div>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className={style.navlinkEnd}>
@@ -100,13 +104,13 @@ const Header = () => {
                     className={style.searchForm}
                     aria-label="Search"
                   />
-                  <div className={style.searchImageDiv}>
+                  {/* <div className={style.searchImageDiv}>
                     <img
                       src="../Images/searchImage.png"
                       height={18}
                       width={18}
                     />
-                  </div>
+                  </div> */}
                 </Form>
               </div>
             </Nav>

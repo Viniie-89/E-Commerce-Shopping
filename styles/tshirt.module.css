@@ -64,6 +64,24 @@
   font-size: 18px;
   line-height: 27px;
   color: #7d89ff;
+  background-position: center;
+  transition: background 0.8s;
+}
+.orderButton:hover {
+  background-color: #7d89ff !important;
+  background-image: radial-gradient(
+    circle,
+    transparent 1%,
+    #7d89ff 1%
+  ) !important;
+  background-position: center !important;
+  background-size: 15000% !important;
+  color: white !important;
+}
+.orderButton:active {
+  transition: background 0s !important;
+  background-color: #7d89ff !important;
+  background-size: 100% !important;
 }
 .tshirtContainer {
   background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
@@ -347,4 +365,110 @@
   .oblongersPara {
     padding-left: 0px;
   }
+}
+.buttonColor {
+  background: none;
+  border: none;
+  padding-left: 0px;
+}
+
+.sizeButtonSmall:hover {
+  background-color: #7d89ff;
+  color: white;
+}
+.sizeButtonSmall:active {
+  background-color: #7d89ff !important;
+  color: white !important;
+}
+.sizeButtonSmall {
+  background: white;
+  border: none;
+  padding-left: 0px;
+  width: 23.28px;
+  height: 24px;
+  border-radius: 50px;
+  margin-right: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 21px;
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #000000;
+}
+.sizeButtonMedium {
+  background: white;
+  border: none;
+  padding-left: 0px;
+  width: 23.28px;
+  height: 24px;
+  border-radius: 50px;
+  margin-right: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 21px;
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #000000;
+}
+.sizeButtonLarge {
+  background: white;
+  border: none;
+  padding-left: 0px;
+  width: 23.28px;
+  height: 24px;
+  border-radius: 50px;
+  margin-right: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 21px;
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #000000;
+}
+.sizeButtonExtraLarge {
+  background: white;
+  border: none;
+  padding-left: 0px;
+  width: 23.28px;
+  height: 24px;
+  border-radius: 50px;
+  margin-right: 6px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px !important;
+  line-height: 21px;
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #000000;
+}
+.sizeButtonMedium:hover {
+  background-color: #7d89ff;
+  color: white;
+}
+.sizeButtonMedium:active {
+  background-color: #7d89ff !important;
+  color: white !important;
+}
+.sizeButtonLarge:hover {
+  background-color: #7d89ff;
+  color: white;
+}
+.sizeButtonLarge:active {
+  background-color: #7d89ff !important;
+  color: white !important;
+}
+.sizeButtonExtraLarge:hover {
+  background-color: #7d89ff;
+  color: white;
+}
+.sizeButtonExtraLarge:active {
+  background-color: #7d89ff !important;
+  color: white !important;
 }

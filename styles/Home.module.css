@@ -3,13 +3,40 @@
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: 75px;
-  /* width: 0ch;
-  overflow: hidden;
-  white-space: no-wrap; */
+  line-height: 65px;
+  color: #ffffff;
+  color: #0000;
+
+  animation: 2s anim-lineUp ease-out infinite;
+}
+.typewriterDiv {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
   color: #ffffff;
 }
+/* @keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+    color: #7d89ff;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    color: white;
+  }
+} */
 .bannerCol1 {
   padding-top: 9%;
 }
@@ -19,10 +46,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  /* or 167% */
-
-  /* Light Medium */
-
   color: #dddddd;
 }
 .bannerButton {
@@ -55,6 +78,7 @@
   font-size: 18px;
   line-height: 27px;
   color: #7d89ff;
+  box-shadow: inset 0 0 0 0 purple;
 }
 
 .bannerButton:hover {
@@ -96,69 +120,87 @@
   margin-left: 30%;
 }
 @media (max-width: 1199px) {
+  .bannerSecondPart {
+    display: none;
+  }
   .girlImg {
-    width: 200%;
-    height: 250%;
-    padding-left: 20px;
+    margin-left: 87%;
+  }
+  .imageSlider {
+    margin-top: -81% !important;
+    left: 117% !important;
   }
 }
 @media (max-width: 992px) {
-  .bannerTitle {
-    font-size: 30px;
-    line-height: 55px;
-    /* text-align: center; */
-  }
   .bannerDetail {
     font-size: 16px;
     /* text-align: center; */
   }
-  .girlImg {
-    height: 250%;
-    width: 200%;
-    /* margin-left: 30%; */
-  }
 
   .bannerCol1 {
-    padding-top: 4%;
+    padding-top: 19%;
   }
-  .suitImg {
-    height: 150%;
-    width: 150%;
+
+  .girlImg {
+    margin-left: 38%;
   }
-  .shirtDiv {
-    margin-left: -3%;
+  .imageSlider {
+    left: 76% !important;
+    margin-top: -113% !important;
+  }
+  .typewriterDiv {
+    font-size: 22px !important;
+    line-height: 36px;
   }
 }
 @media (max-width: 767px) {
-  .girlImg {
-    width: 150%;
-    margin-top: 15%;
-    margin-left: 30%;
-    /* padding-left: -30px; */
-  }
   .bannerSecondPart {
     display: none;
   }
-  .bannerTitle {
-    text-align: center;
-  }
+
   .bannerDetail {
     text-align: center;
+    margin-top: 3%;
   }
-  .bannerButtons {
+  .bannerButton {
+    text-align: center;
+    margin: auto;
+  }
+  .bannerCol1 {
+    padding-top: 0px;
+  }
+  .typewriterDiv {
+    font-size: 37px !important;
     text-align: center;
   }
-}
-@media (max-width: 576px) {
   .girlImg {
-    width: 60%;
-    margin-left: 20%;
+    margin-top: 6%;
+    margin-left: 23%;
+  }
+  .imageSlider {
+    left: 45% !important;
+    margin-top: -56% !important;
+  }
+}
+@media (max-width: 578px) {
+  .typewriterDiv {
+    font-size: 24px !important;
+    line-height: 20px;
+  }
+  .bannerDetail {
+    margin-top: 4%;
+  }
+  .girlImg {
+    margin-left: 1% !important;
+    height: 100%;
+    width: 100%;
+  }
+  .imageSlider {
+    left: 11% !important;
+    margin-top: -35% !important;
   }
 }
 @media (max-width: 1329px) {
-  .girlImg {
-    margin-left: 10%;
-  }
 }
 /* last component css */
 .modelContainer {
@@ -204,6 +246,7 @@
   height: 100%;
   width: 100%;
 }
+
 @media (max-width: 992px) {
   .modelH3 {
     font-size: 30px;
@@ -234,8 +277,8 @@
   position: absolute;
   width: 290px;
   height: 80px;
-  margin-top: -7%;
-  left: 69%;
+  margin-top: -60%;
+  left: 50%;
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(5px);
@@ -250,6 +293,33 @@
   width: 80px;
 }
 .secondSliderImage {
-  height: 76px;
-  width: 76px;
+  height: 80px;
+  width: 80px;
+}
+@media (max-width: 420px) {
+  .typewriterDiv {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .modelContainer {
+    margin-top: 8%;
+  }
+  .Modelcol2 {
+    margin-top: 8%;
+  }
+  .imageSlider {
+    width: 80% !important;
+    margin-top: -42% !important;
+  }
+  .firstSliderImage {
+    width: 90%;
+    height: 90%;
+    margin-top: 10%;
+  }
+  .secondSliderImage {
+    width: 90%;
+    height: 90%;
+    margin-top: 10%;
+  }
 }

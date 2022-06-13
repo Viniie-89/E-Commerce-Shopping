@@ -19,9 +19,6 @@ const AboutData = () => {
                     height={349}
                     className={style.aboutDtaimg1}
                   />
-                  <div className={style.absoluteImage2}>
-                    <img src="../Images/secondDivImage.png" />
-                  </div>
                 </Col>
                 <Col xl={6} lg={6} className={style.featuresDescriptions}>
                   <h2 className={style.aboutDataTitle}>{item.title}</h2>
@@ -43,9 +40,6 @@ const AboutData = () => {
                     height={349}
                     className={style.aboutDtaimg2}
                   />
-                  <div className={style.absoluteImage2}>
-                    <img src="../Images/firstImageDiv.png" />
-                  </div>
                 </Col>
               </>
             );

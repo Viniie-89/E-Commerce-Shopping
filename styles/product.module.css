@@ -45,11 +45,42 @@
   padding-right: 3%;
   color: #646464;
 }
+.tshirth61 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 3%;
+  color: #646464;
+}
+.tshirth62 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 3%;
+  color: #646464;
+}
+.tshirth63 {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 3%;
+  color: #646464;
+}
 .tshirth6:hover {
   color: #5463ff;
-  text-decoration: underline;
+  text-decoration: underline !important;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 1s ease;
 }
+
 .cardTitle {
   font-family: "Poppins";
   font-style: normal;
@@ -94,6 +125,9 @@
   margin-top: 15%;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
   background-color: white;
+}
+.productCard:hover {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 576px) {
   .productText {

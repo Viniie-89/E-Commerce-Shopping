@@ -4,7 +4,7 @@ import React from "react";
 import { Row, Col, Container, Accordion } from "react-bootstrap";
 import style from "../styles/productDetail.module.css";
 import Link from "next/link";
-const ProductD = () => {
+const ProductD = (props) => {
   return (
     <Container fluid>
       <Container>
@@ -18,7 +18,7 @@ const ProductD = () => {
           </div>
           <Col xl={6} lg={6} md={6} className={style.productDetailCol}>
             <img
-              src="../Images/productDetail.png"
+              src={props.image}
               height={400}
               width={588}
               className={style.imageProduct}
@@ -47,7 +47,7 @@ const ProductD = () => {
           </Col>
 
           <Col xl={6} lg={6} md={6} className={style.detailCol}>
-            <h2 className={style.smartText}>Smart T-shirt</h2>
+            <h2 className={style.smartText}>{props.name}</h2>
             <p className={style.smartPara}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget
               gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, Accordion } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +8,41 @@ import "slick-carousel/slick/slick-theme.css";
 import tshirt from "../Json/Tshirt.json";
 import styles from "../styles/tshirt.module.css";
 const Tshirts = () => {
+  const [isActive, setIsActive] = useState(false);
+  const [isActive1, setIsActive1] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
+
+  useEffect(() => {
+    SmallButton();
+  }, []);
+
+  const SmallButton = () => {
+    setIsActive(true);
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(false);
+  };
+
+  const mediumButton = () => {
+    setIsActive(false);
+    setIsActive1(true);
+    setIsActive2(false);
+    setIsActive3(false);
+  };
+  const largeButton = () => {
+    setIsActive(false);
+    setIsActive1(false);
+    setIsActive2(true);
+    setIsActive3(false);
+  };
+  const extraLargeButton = () => {
+    setIsActive(false);
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(true);
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -59,18 +94,24 @@ const Tshirts = () => {
             <div className={styles.colorDiv}>
               <div className={styles.threeColor}>
                 <h6 className={styles.colorText}>Color</h6>
-                <img
-                  src="../Images/blackCircle.png"
-                  className={styles.blackCircle}
-                />
-                <img
-                  src="../Images/whiteCircle.png"
-                  className={styles.blackCircle}
-                />
-                <img
-                  src="../Images/greenCircle.png"
-                  className={styles.blackCircle}
-                />
+                <button className={styles.buttonColor}>
+                  <img
+                    src="../Images/blackCircle.png"
+                    className={styles.blackCircle}
+                  />
+                </button>
+                <button className={styles.buttonColor}>
+                  <img
+                    src="../Images/whiteCircle.png"
+                    className={styles.blackCircle}
+                  />
+                </button>
+                <button className={styles.buttonColor}>
+                  <img
+                    src="../Images/greenCircle.png"
+                    className={styles.blackCircle}
+                  />
+                </button>
               </div>
               <div className="d-flex">
                 <img src="../Images/starImage.png" width={152} height={24} />
@@ -80,22 +121,50 @@ const Tshirts = () => {
             <div className={styles.sizeDiv}>
               <div>
                 <h6 className={styles.sizeText}>Size</h6>
-                <img
-                  src="../Images/smallSize.png"
-                  className={styles.sizeImage}
-                />
-                <img
-                  src="../Images/mediumSize.png"
-                  className={styles.sizeImage}
-                />
-                <img
-                  src="../Images/largeSize.png"
-                  className={styles.sizeImage}
-                />
-                <img
-                  src="../Images/extraLarge.png"
-                  className={styles.sizeImage}
-                />
+                <button
+                  active="true"
+                  className={styles.sizeButtonSmall}
+                  onClick={SmallButton}
+                  style={{
+                    backgroundColor: isActive ? "#5463FF" : "white",
+                    color: isActive ? "white" : "black",
+                  }}
+                >
+                  <h6>S</h6>
+                </button>
+                <button
+                  className={styles.sizeButtonMedium}
+                  onClick={mediumButton}
+                  active={isActive1}
+                  style={{
+                    backgroundColor: isActive1 ? "#5463FF" : "white",
+                    color: isActive1 ? "white" : "black",
+                  }}
+                >
+                  <h6>M</h6>
+                </button>
+                <button
+                  className={styles.sizeButtonLarge}
+                  onClick={largeButton}
+                  active={isActive2}
+                  style={{
+                    backgroundColor: isActive2 ? "#5463FF" : "white",
+                    color: isActive2 ? "white" : "black",
+                  }}
+                >
+                  <h6>L</h6>
+                </button>
+                <button
+                  className={styles.sizeButtonExtraLarge}
+                  onClick={extraLargeButton}
+                  active={isActive3}
+                  style={{
+                    backgroundColor: isActive3 ? "#5463FF" : "white",
+                    color: isActive3 ? "white" : "black",
+                  }}
+                >
+                  <h6>XL</h6>
+                </button>
               </div>
               <h3 className={styles.dollar}>50$</h3>
             </div>
@@ -146,10 +215,12 @@ const Tshirts = () => {
                     <div className={styles.sizesDiv}>
                       <div>
                         <h6 className={styles.sizesText}>Size</h6>
+
                         <img
                           src="../Images/smallSize.png"
                           className={styles.sizesImage}
                         />
+
                         <img
                           src="../Images/mediumSize.png"
                           className={styles.sizesImage}

@@ -6,140 +6,103 @@ import styles from "../styles/brand.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import brand from "../Json/Brand.json";
 const Brand = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
     arrows: false,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 578,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <Container fluid className={styles.brandContainer}>
       <Container>
-        <div>
-          <Slider {...settings}>
-            <Col
-              xl={12}
-              lg={12}
-              md={12}
-              sm={12}
-              className={styles.brandMainCol}
-            >
-              <Row>
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand1}>
-                  <div>
-                    <img src="../Images/brand1.png" />
-                  </div>
-                </Col>
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand2}>
-                  <div>
-                    <img src="../Images/brand2.png" />
-                  </div>
-                </Col>
-
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand3}>
-                  <div>
-                    <img src="../Images/brand3.png" />
-                  </div>
-                </Col>
-
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand4}>
-                  <div>
-                    <img src="../Images/brand4.png" />
-                  </div>
-                </Col>
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand5}>
-                  <div>
-                    <img src="../Images/brand5.png" />
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-
-            <Col
-              xl={12}
-              lg={12}
-              md={12}
-              sm={12}
-              className={styles.brandMainCol}
-            >
-              <Row>
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand1}>
-                  <div>
-                    <img src="../Images/brand1.png" />
-                  </div>
-                </Col>
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand2}>
-                  <div>
-                    <img src="../Images/brand2.png" />
-                  </div>
-                </Col>
-
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand3}>
-                  <div>
-                    <img src="../Images/brand3.png" />
-                  </div>
-                </Col>
-
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand4}>
-                  <div>
-                    <img src="../Images/brand4.png" />
-                  </div>
-                </Col>
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand5}>
-                  <div>
-                    <img src="../Images/brand5.png" />
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-
-            <Col
-              xl={12}
-              lg={12}
-              md={12}
-              sm={12}
-              className={styles.brandMainCol}
-            >
-              <Row>
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand1}>
-                  <div>
-                    <img src="../Images/brand1.png" />
-                  </div>
-                </Col>
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand2}>
-                  <div>
-                    <img src="../Images/brand2.png" />
-                  </div>
-                </Col>
-
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand3}>
-                  <div>
-                    <img src="../Images/brand3.png" />
-                  </div>
-                </Col>
-
-                <Col xl={2} lg={3} md={4} sm={6} className={styles.brand4}>
-                  <div>
-                    <img src="../Images/brand4.png" />
-                  </div>
-                </Col>
-                <Col xl={3} lg={3} md={4} sm={6} className={styles.brand5}>
-                  <div>
-                    <img src="../Images/brand5.png" />
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Slider>
-        </div>
+        <Row>
+          <div>
+            <Slider {...settings}>
+              {brand.map((elem) => {
+                return (
+                  // eslint-disable-next-line react/jsx-key
+                  <>
+                    <div>
+                      <img src={elem.image1} />
+                    </div>
+                    <div>
+                      <img src={elem.image2} />
+                    </div>
+                    <div>
+                      <img src={elem.image3} />
+                    </div>
+                    <div>
+                      <img src={elem.image4} />
+                    </div>
+                    <div>
+                      <img src={elem.image5} />
+                    </div>
+                  </>
+                );
+              })}
+            </Slider>
+          </div>
+        </Row>
       </Container>
     </Container>
   );

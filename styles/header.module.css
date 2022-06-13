@@ -34,9 +34,7 @@
 .nav .navbarnav {
   justify-content: space-around;
 }
-.cardImage:hover {
-  fill: brown !important;
-}
+
 .searchForm:focus {
   box-shadow: none !important;
 }
@@ -45,4 +43,7 @@
 }
 .headerContainer {
   box-shadow: 0px 2px 12px rgb(0 0 0 / 10%);
+}
+.logoImage {
+  cursor: pointer;
 }

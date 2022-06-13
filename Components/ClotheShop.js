@@ -150,7 +150,7 @@ const ClotheShop = () => {
                         className={style.filterCard}
                       >
                         <Card className={style.productCard}>
-                          <Link href="/ProductDetail">
+                          <Link href={`/product-details/${elem.id}`}>
                             <img src={elem.image} className={style.shopImage} />
                           </Link>
                           <Card.Body className={style.cardBody1}>
