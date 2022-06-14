@@ -12,7 +12,9 @@ const Tshirts = () => {
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
-
+  const [isActiveBlack, setIsActiveBlack] = useState(false);
+  const [isActiveWhite, setIsActiveWhite] = useState(false);
+  const [isActiveGreen, setIsActiveGreen] = useState(false);
   useEffect(() => {
     SmallButton();
   }, []);
@@ -43,6 +45,23 @@ const Tshirts = () => {
     setIsActive3(true);
   };
 
+  const blackButton = () => {
+    setIsActiveBlack(true);
+    setIsActiveWhite(false);
+    setIsActiveGreen(false);
+  };
+
+  const whiteButton = () => {
+    setIsActiveBlack(false);
+    setIsActiveWhite(true);
+    setIsActiveGreen(false);
+  };
+
+  const greenButton = () => {
+    setIsActiveBlack(false);
+    setIsActiveWhite(false);
+    setIsActiveGreen(true);
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -94,19 +113,40 @@ const Tshirts = () => {
             <div className={styles.colorDiv}>
               <div className={styles.threeColor}>
                 <h6 className={styles.colorText}>Color</h6>
-                <button className={styles.buttonColor}>
+                <button
+                  active="true"
+                  className={styles.buttonColor}
+                  onClick={blackButton}
+                  style={{
+                    borderRadius: isActive ? "50px" : "0px",
+                  }}
+                >
                   <img
                     src="../Images/blackCircle.png"
                     className={styles.blackCircle}
                   />
                 </button>
-                <button className={styles.buttonColor}>
+                <button
+                  active={isActiveWhite}
+                  onClick={whiteButton}
+                  className={styles.buttonColor}
+                  style={{
+                    borderRadius: isActiveWhite ? "50px" : "0px",
+                  }}
+                >
                   <img
                     src="../Images/whiteCircle.png"
                     className={styles.blackCircle}
                   />
                 </button>
-                <button className={styles.buttonColor}>
+                <button
+                  active={isActiveGreen}
+                  onClick={greenButton}
+                  className={styles.buttonColor}
+                  style={{
+                    borderRadius: isActiveGreen ? "50px" : "0px",
+                  }}
+                >
                   <img
                     src="../Images/greenCircle.png"
                     className={styles.blackCircle}

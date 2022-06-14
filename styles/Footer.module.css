@@ -1,5 +1,5 @@
 .footerSecondPartCol1 {
-  margin-left: 15%;
+  /* margin-left: 15%; */
 }
 .footerPara {
   font-family: "Poppins";
@@ -22,36 +22,8 @@
   color: #f4f4f4;
   margin-bottom: 3%;
 }
-/* .footerLoginButton {
-  border: none;
-  background: none;
-  outline: none;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 34px;
-  gap: 10px;
 
-  width: 180px;
-  height: 48px;
-
-  background-color: #ffffff !important;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 27px;
-  color: #7d89ff;
-} */
 .footerLoginButton {
-  /* position: relative;
-  background-color: #04aa6d;
-  border: none;
-  font-size: 28px;
-  color: #ffffff;
-  padding: 20px;
-  width: 200px; */
   border: none;
   background: none;
   outline: none;
@@ -73,33 +45,19 @@
   line-height: 27px;
   color: #7d89ff;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
+
   cursor: pointer;
+  background-position: center;
+  transition: background 0.8s;
 }
-
-.footerLoginButton:after {
-  content: "";
-  background: #7d89ff;
-  display: block;
-
-  padding-top: 300%;
-  padding-left: 400%;
-  margin-left: -34px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
-  width: 100%;
+.footerLoginButton:hover {
+  background: #7d89ff radial-gradient(circle, transparent 1%, #7d89ff 1%)
+    center/15000%;
 }
-
-.footerLoginButton:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
-  background-color: #7d89ff !important;
+.footerLoginButton:active {
+  background-color: #7d89ff;
+  background-size: 100%;
+  transition: background 0s;
 }
 .footerHome {
   font-family: "Poppins";
@@ -127,9 +85,13 @@
 .footerCon {
   padding-top: 5%;
   padding-bottom: 5%;
+  padding-right: 5%;
 }
 .footerContainer {
   background-color: #393e46;
+}
+.socialMediaLink {
+  display: flex;
 }
 @media (max-width: 1199px) {
   .footerSecondPart {
@@ -147,8 +109,84 @@
 @media (max-width: 576px) {
   .footerCol1 {
     margin-top: 4%;
+    text-align: center;
   }
   .footerCol2 {
     margin-top: 4%;
+    text-align: center;
   }
+  .footerCol3 {
+    text-align: center;
+  }
+  .footerCol4 {
+    text-align: center;
+  }
+  .imageDiv {
+    text-align: center;
+  }
+  .footerPara {
+    text-align: center;
+    /* margin: auto; */
+    padding-right: 0px;
+  }
+  .footerButtonDiv {
+    text-align: center;
+  }
+  .socialMediaLink {
+    display: flex;
+    justify-content: center;
+  }
+}
+.facebookImg:hover {
+  background: #039be5;
+  background-image: url("../public/Images/facebookIcon.svg");
+  border-radius: 10px;
+  box-sizing: none;
+  border: 1px solid #039be5;
+  transition: 1s ease;
+}
+.twitterImg:hover {
+  background: #039be5;
+  background-image: url("../public/Images/twitterIcon.svg");
+  border-radius: 10px;
+  box-sizing: none;
+  border: 1px solid #039be5;
+  transition: 1s ease;
+}
+.linkdinImg:hover {
+  background-color: #039be5;
+  border: #039be5;
+  border-radius: 10px;
+  transition: 1s ease;
+}
+.instagramImg:hover {
+  background-color: #039be5;
+  border: #039be5;
+  border-radius: 10px;
+  transition: 1s ease;
+}
+
+.facebookImg {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 7px 10px 7px 10px;
+}
+.twitterImg {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 7px 7px 7px 7px;
+}
+.linkdinImg {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 7px 7px 10px 7px;
+}
+.instagramImg {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 7px 7px 7px 7px;
 }

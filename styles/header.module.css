@@ -34,7 +34,21 @@
 .nav .navbarnav {
   justify-content: space-around;
 }
+.searchForm {
+  border: 1.5px solid #969696 !important;
+  border-radius: 10px !important;
+}
+.searchForm::placeholder {
+  font-family: "Mada";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
 
+  /* Light Medium */
+
+  color: #dddddd;
+}
 .searchForm:focus {
   box-shadow: none !important;
 }
@@ -46,4 +60,56 @@
 }
 .logoImage {
   cursor: pointer;
+}
+.iconDiv {
+  display: flex;
+}
+.mobile {
+  display: none;
+}
+.navlink:hover {
+  color: red !important;
+}
+@media (max-width: 992px) {
+  .headerContainer {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .navlinks {
+    font-family: "Mada";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 5px;
+    color: white !important;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+  }
+  .searchDivOffCanvas {
+    margin-top: 3%;
+  }
+  .searchFormOffcanvas {
+    width: 60%;
+    height: 48px;
+
+    background: #ffffff;
+    /* Medium */
+
+    border: 1.5px solid #969696 !important;
+    border-radius: 10px !important;
+  }
+  .searchFormOffcanvas::placeholder {
+    font-family: "Mada";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    /* Light Medium */
+
+    color: #dddddd;
+  }
 }

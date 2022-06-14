@@ -89,7 +89,7 @@
   line-height: 21px;
   margin-top: 0px;
   margin-bottom: 0px;
-
+  text-transform: capitalize;
   color: #0d1222;
 }
 .cardBody1 {

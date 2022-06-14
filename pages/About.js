@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
 import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import style from "../styles/about.module.css";
@@ -10,7 +10,7 @@ import { Roll } from "react-reveal";
 const About = () => {
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <Container fluid className={style.aboutContainer}>
         <Container className={style.aboutCon}>
           <Row>

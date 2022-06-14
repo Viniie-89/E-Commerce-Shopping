@@ -2,7 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
 import shopStyle from "../styles/shop.module.css";
@@ -52,7 +53,7 @@ const Shop = () => {
   };
   return (
     <>
-      <Header />;
+      <OffCanvasHeader />;
       <Container fluid className={shopStyle.shopContainer}>
         <Container className={shopStyle.shopCon}>
           <Flip top>

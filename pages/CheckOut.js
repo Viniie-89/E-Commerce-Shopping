@@ -2,7 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import Footer from "../Components/Footer";
 import {
   Container,
@@ -18,7 +19,7 @@ import checkoutData from "../Json/checkoutData.json";
 const WishList = () => {
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <Container fluid className={style.wishlistContainer}>
         <Container>
           <div className={style.wishListDiv}>

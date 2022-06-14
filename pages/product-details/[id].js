@@ -3,19 +3,20 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from "react";
 import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
 import ProductD from "../../Components/ProductD";
 import { Container, Row, Col, Card, NavLink } from "react-bootstrap";
 import style from "../../styles/productDetail.module.css";
 import productData from "../../Json/ProductData.json";
 import cloth from "../../Json/ClotheShop.json";
 import { useRouter } from "next/router";
+import OffcanvasHeader from "../../Components/OffCanvasHeader";
 const ProductDetail = () => {
   const [descr, setDesc] = useState(true);
   const [review, setReview] = useState(false);
   const [isActive, setIsActive] = useState(true);
   const [productData1, setProductData1] = useState([]);
   const router = useRouter();
+
   const description = () => {
     setDesc(true);
     setReview(false);
@@ -36,7 +37,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Header />
+      <OffcanvasHeader />
       {productDetailsLog.length > 0 && (
         <ProductD
           image={productDetailsLog ? productDetailsLog[0].image : "abcd"}

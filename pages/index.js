@@ -2,7 +2,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import Image from "next/image";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
@@ -15,6 +16,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Typewriter } from "react-simple-typewriter";
+import bannerData from "../Json/bannerData.json";
 import "animate.css";
 export default function Home() {
   const settings = {
@@ -22,14 +24,17 @@ export default function Home() {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     dots: false,
     arrows: true,
+    // autoplay: true,
+    // speed: 2000,
+    // autoplaySpeed: 2000,
   };
-
+  const [data, setData] = useState("../Images/bannerSlider1.png");
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <Container fluid className={styles.bannerContainer}>
         <Container className={styles.bannerCon}>
           <Row>
@@ -49,8 +54,8 @@ export default function Home() {
                       loop
                       cursor
                       cursorStyle="_"
-                      typeSpeed={70}
-                      deleteSpeed={50}
+                      typeSpeed={150}
+                      deleteSpeed={100}
                       delaySpeed={1000}
                       words={["from us", "from us"]}
                     />
@@ -110,7 +115,7 @@ export default function Home() {
                   <div className="animate__animated animate__zoomIn animate-duration: 3s">
                     <div className={styles.imageGirl}>
                       <img
-                        src="../Images/girlImage1.png"
+                        src={data}
                         height={522}
                         width={400}
                         className={styles.girlImg}
@@ -120,14 +125,24 @@ export default function Home() {
                     <div className={styles.imageSlider}>
                       <div>
                         <Slider {...settings} className="bannerArrow">
-                          <div>
-                            <img
-                              src="../Images/bannerSlider1.png"
-                              className={styles.firstSliderImage}
-                            ></img>
-                          </div>
+                          {bannerData.map((elem) => {
+                            return (
+                              <>
+                                <div>
+                                  <img
+                                    src={elem.image1}
+                                    className={styles.firstSliderImage}
+                                    onClick={() => setData(elem.image1)}
+                                    style={{ cursor: "pointer" }}
+                                    heigth={"100%"}
+                                    width={"100%"}
+                                  ></img>
+                                </div>
+                              </>
+                            );
+                          })}
 
-                          <div>
+                          {/* <div>
                             <img
                               src="../Images/bannerSlider2.png"
                               className={styles.secondSliderImage}
@@ -181,7 +196,7 @@ export default function Home() {
                               src="../Images/bannerSlider2.png"
                               className={styles.secondSliderImage}
                             ></img>
-                          </div>
+                          </div> */}
                         </Slider>
                       </div>
                     </div>

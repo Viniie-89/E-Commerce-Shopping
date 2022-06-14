@@ -9,7 +9,7 @@ const Footer = () => {
       <Container className={style.footerCon}>
         <Row>
           <Col xl={6} lg={12} md={12} sm={12}>
-            <div>
+            <div className={style.imageDiv}>
               <img src="../images/footerLogo.png" height={33.96} width={160} />
             </div>
             <p className={style.footerPara}>
@@ -82,32 +82,32 @@ const Footer = () => {
                 <NavLink className={style.footerHomeListEmail}>
                   mangcoding@gmail.com
                 </NavLink>
-                <div className="d-flex">
+                <div className={style.socialMediaLink}>
                   <NavbarBrand>
                     <img
-                      src="../Images/facebookIcon.png"
-                      style={{ cursor: "pointer" }}
+                      src="../Images/facebookLogo.svg"
+                      className={style.facebookImg}
                     />
                   </NavbarBrand>
 
                   <NavbarBrand>
                     <img
-                      src="../Images/twetter.png"
-                      style={{ cursor: "pointer" }}
+                      src="../Images/twitterLogo.svg"
+                      className={style.twitterImg}
                     />
                   </NavbarBrand>
 
                   <NavbarBrand>
                     <img
-                      src="../Images/linkedin.png"
-                      style={{ cursor: "pointer" }}
+                      src="../Images/linkdinLogo.svg"
+                      className={style.linkdinImg}
                     />
                   </NavbarBrand>
 
                   <NavbarBrand>
                     <img
-                      src="../Images/instagram.png"
-                      style={{ cursor: "pointer" }}
+                      src="../Images/instagramLogo.svg"
+                      className={style.instagramImg}
                     />
                   </NavbarBrand>
                 </div>

@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import Footer from "../Components/Footer";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import style from "../styles/contact.module.css";
@@ -9,7 +10,7 @@ import ContactForm from "../Components/ContactForm";
 const Contact = () => {
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <Container
         fluid
         className={style.contactContainer}

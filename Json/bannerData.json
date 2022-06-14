@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "image1": "../Images/bannerSlider1.png"
+  },
+  {
+    "id": 1,
+    "image1": "../Images/bannerSlider2.png"
+  },
+  {
+    "id": 2,
+    "image1": "../Images/bannerSlider1.png"
+  },
+  {
+    "id": 3,
+    "image1": "../Images/bannerSlider2.png"
+  },
+  {
+    "id": 4,
+    "image1": "../Images/bannerSlider1.png"
+  },
+  {
+    "id": 5,
+    "image1": "../Images/bannerSlider2.png"
+  },
+  {
+    "id": 6,
+    "image1": "../Images/bannerSlider1.png"
+  }
+]

@@ -3,7 +3,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
 import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import ProductD from "../Components/ProductD";
 import { Container, Row, Col, Card, NavLink } from "react-bootstrap";
 import style from "../styles/productDetail.module.css";
@@ -27,7 +28,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <ProductD />
       <Container fluid className={style.ReviewContainer}>
         <Container>

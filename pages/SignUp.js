@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import Footer from "../Components/Footer";
 import { Row, Col, Container, Form, FloatingLabel } from "react-bootstrap";
 import style from "../styles/signup.module.css";
@@ -9,7 +10,7 @@ import Link from "next/link";
 const Login = () => {
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
 
       <Container fluid className={style.loginContainer}>
         <img

@@ -2,13 +2,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import { Container, Row, Col, Card, Form } from "react-bootstrap";
-import Header from "../Components/Header";
+import OffCanvasHeader from "../Components/OffCanvasHeader";
+
 import Footer from "../Components/Footer";
 import style from "../styles/myAccount.module.css";
 const MyAccount = () => {
   return (
     <>
-      <Header />
+      <OffCanvasHeader />
       <Container fluid className={style.aboutContainer}>
         <Container className={style.aboutCon}>
           <Row>

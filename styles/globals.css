@@ -27,14 +27,10 @@ a {
     url("../public/Font/Poppins Regular 400.ttf") format("truetype");
   font-weight: normal;
 }
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
-  background-color: black !important;
+
+.navbar-light .navbar-toggler {
+  color: #ab40ff !important;
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%) !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -138,13 +134,30 @@ a {
   color: lightseagreen !important;
   font-weight: bold;
 }
+.navbar-expand-lg .navbar-nav .nav-link.active .dot,
+.navbar-expand-lg .navbar-nav .nav-link.focus .dot {
+  color: #5463ff !important;
+  visibility: visible !important;
+  /* border-bottom: 1px solid #5463ff; */
+  font-weight: bolder !important;
+}
 .navbar-expand-lg .navbar-nav .nav-link.active,
 .navbar-expand-lg .navbar-nav .nav-link.focus {
   color: #5463ff !important;
-
+  visibility: visible !important;
+  /* border-bottom: 1px solid #5463ff; */
   font-weight: bolder !important;
 }
-
+.cardImage:focus-visible {
+  background-color: #5463ff !important;
+}
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.focus {
+  padding-right: 0;
+  padding-left: 0;
+  color: #5463ff !important;
+  font-weight: bolder !important;
+}
 .form-control {
   display: block;
   width: 100%;
@@ -227,4 +240,42 @@ a {
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: blue !important;
+}
+.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: 400px;
+  border-right: 1px solid rgba (0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+}
+.dot {
+  height: 9px;
+  width: 9px;
+  background-color: #7d89ff;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  /* margin: auto; */
+  margin-top: 19% !important;
+  margin-left: 16px;
+  visibility: hidden;
+}
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: end !important;
+  padding: 1rem 1rem;
+}
+.btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #000;
+  background: transparent url(../public/Images/hambClose.svg) no-repeat;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 0.5;
 }
