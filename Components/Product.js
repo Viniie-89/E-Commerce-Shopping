@@ -97,7 +97,7 @@ const Product = () => {
               <>
                 <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                   <Card className={style.productCard}>
-                    <img src={val.image} />
+                    <img src={val.image} className={style.productImage} />
                     <Card.Body className={style.cardBody1}>
                       <Card.Title className={style.cardTitle}>
                         {val.title}

@@ -1,30 +1,26 @@
 [
   {
     "id": 0,
-    "image1": "../Images/bannerSlider1.png"
+    "image1": "../Images/imageBannerGirl.png"
   },
   {
     "id": 1,
-    "image1": "../Images/bannerSlider2.png"
+    "image1": "../Images/MenImages3.png"
   },
   {
     "id": 2,
-    "image1": "../Images/bannerSlider1.png"
+    "image1": "../Images/mImg2.jpg"
   },
   {
     "id": 3,
-    "image1": "../Images/bannerSlider2.png"
+    "image1": "../Images/imageBannerGirl.png"
   },
   {
     "id": 4,
-    "image1": "../Images/bannerSlider1.png"
-  },
-  {
-    "id": 5,
-    "image1": "../Images/bannerSlider2.png"
+    "image1": "../Images/MenImages3.png"
   },
   {
     "id": 6,
-    "image1": "../Images/bannerSlider1.png"
+    "image1": "../Images/mImg2.jpg"
   }
 ]

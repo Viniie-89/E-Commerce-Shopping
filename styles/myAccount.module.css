@@ -53,7 +53,7 @@
   color: #f4f4f4;
 }
 .col2Image {
-  text-align: end;
+  text-align: right;
   /* position: absolute; */
 }
 /* .aboutContainer {
@@ -206,7 +206,7 @@
   color: #969696;
 }
 /* .secondUpdatebuttonDiv {
-  text-align: end;
+  text-align: right;
 } */
 .secondUpdateButtons {
   width: 180px;

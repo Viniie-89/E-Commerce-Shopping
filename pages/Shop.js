@@ -15,8 +15,9 @@ import ClotheShop from "../Components/ClotheShop";
 import RecommendProduct from "../Components/RecommendProduct";
 import style from "../styles/recommendProduct.module.css";
 import productData from "../Json/ProductData.json";
-import Flip from "react-reveal";
+
 import Link from "next/link";
+import ScrollTop from "../Components/ScrollTop";
 const Shop = () => {
   const [data, setData] = useState(productData);
   const settings = {
@@ -53,49 +54,48 @@ const Shop = () => {
   };
   return (
     <>
-      <OffCanvasHeader />;
+      <ScrollTop />
+      <OffCanvasHeader />
       <Container fluid className={shopStyle.shopContainer}>
         <Container className={shopStyle.shopCon}>
-          <Flip top>
-            <Row>
-              <Col xl={7} lg={7} md={4} sm={12}>
-                <div className={shopStyle.homeDiv}>
-                  <h5 className={shopStyle.homeh5}>Home</h5>
-                  <h5 className={shopStyle.slash}>/</h5>
-                  <h5 className={shopStyle.shoph5}>Shop</h5>
-                </div>
-                <div className={shopStyle.shopTextDiv}>
-                  <h5 className={shopStyle.shopText}>Shop</h5>
-                </div>
-              </Col>
-              <Col xl={5} lg={5} md={8} sm={12} className={shopStyle.col2shop}>
-                <div>
-                  <Slider {...settings} className="shopArrow">
-                    {shop.map((elem) => {
-                      return (
-                        <>
-                          <div className={shopStyle.imageDiv}>
-                            <img
-                              src={elem.image}
-                              height={90}
-                              width={90}
-                              className={shopStyle.sliderImageClass}
-                            />
-                          </div>
-                          <div className={shopStyle.h6}>
-                            <h6 className={shopStyle.sliderTitle}>
-                              {elem.title}
-                            </h6>
-                          </div>
-                          {/* </div> */}
-                        </>
-                      );
-                    })}
-                  </Slider>
-                </div>
-              </Col>
-            </Row>
-          </Flip>
+          <Row>
+            <Col xl={7} lg={7} md={4} sm={12}>
+              <div className={shopStyle.homeDiv}>
+                <h5 className={shopStyle.homeh5}>Home</h5>
+                <h5 className={shopStyle.slash}>/</h5>
+                <h5 className={shopStyle.shoph5}>Shop</h5>
+              </div>
+              <div className={shopStyle.shopTextDiv}>
+                <h5 className={shopStyle.shopText}>Shop</h5>
+              </div>
+            </Col>
+            <Col xl={5} lg={5} md={8} sm={12} className={shopStyle.col2shop}>
+              <div>
+                <Slider {...settings} className="shopArrow">
+                  {shop.map((elem) => {
+                    return (
+                      <>
+                        <div className={shopStyle.imageDiv}>
+                          <img
+                            src={elem.image}
+                            height={90}
+                            width={90}
+                            className={shopStyle.sliderImageClass}
+                          />
+                        </div>
+                        <div className={shopStyle.h6}>
+                          <h6 className={shopStyle.sliderTitle}>
+                            {elem.title}
+                          </h6>
+                        </div>
+                        {/* </div> */}
+                      </>
+                    );
+                  })}
+                </Slider>
+              </div>
+            </Col>
+          </Row>
         </Container>
       </Container>
       <ClotheShop />

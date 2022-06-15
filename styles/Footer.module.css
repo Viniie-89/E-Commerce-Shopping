@@ -140,7 +140,7 @@
 .facebookImg:hover {
   background: #039be5;
   background-image: url("../public/Images/facebookIcon.svg");
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-sizing: none;
   border: 1px solid #039be5;
   transition: 1s ease;
@@ -148,7 +148,7 @@
 .twitterImg:hover {
   background: #039be5;
   background-image: url("../public/Images/twitterIcon.svg");
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-sizing: none;
   border: 1px solid #039be5;
   transition: 1s ease;
@@ -156,14 +156,14 @@
 .linkdinImg:hover {
   background-color: #039be5;
   border: #039be5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 1s ease;
 }
 .instagramImg:hover {
-  background-color: #039be5;
   border: #039be5;
-  border-radius: 10px;
+  z-index: 1233434;
   transition: 1s ease;
+  background-image: url("../public/Images/instaIcon.svg");
 }
 
 .facebookImg {

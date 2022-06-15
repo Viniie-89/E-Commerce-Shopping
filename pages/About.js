@@ -7,9 +7,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import style from "../styles/about.module.css";
 import AboutData from "../Components/AboutData";
 import { Roll } from "react-reveal";
+import ScrollTop from "../Components/ScrollTop";
 const About = () => {
   return (
     <>
+      <ScrollTop />
       <OffCanvasHeader />
       <Container fluid className={style.aboutContainer}>
         <Container className={style.aboutCon}>

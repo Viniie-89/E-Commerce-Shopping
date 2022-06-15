@@ -219,6 +219,11 @@
 }
 .girlImg {
   margin-left: 15%;
+
+  border: 10px solid white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 .modelPara {
   font-family: "Poppins";
@@ -257,6 +262,10 @@
   }
   .Modelcol2 {
     margin-top: 3%;
+  }
+  .bannerButtons {
+    margin: auto;
+    text-align: center;
   }
 }
 .imageGirl {
@@ -303,8 +312,8 @@
     left: 10% !important;
   }
   .firstSliderImage {
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
     margin-top: 10%;
   }
   .secondSliderImage {

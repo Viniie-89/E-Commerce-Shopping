@@ -100,6 +100,7 @@ const Tshirts = () => {
                           className={styles.tshirtImage}
                         />
                       </div>
+                      <div className={styles.shadowDiv}></div>
                     </>
                   );
                 })}

@@ -250,22 +250,21 @@ a {
   background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
 }
 .dot {
-  height: 9px;
-  width: 9px;
+  height: 5px;
+  width: 5px;
   background-color: #7d89ff;
   border-radius: 50%;
   display: flex;
   align-self: center;
   justify-self: center;
-  /* margin: auto; */
-  margin-top: 19% !important;
-  margin-left: 16px;
+  margin: auto;
+  /* margin-top: 3% !important; */
   visibility: hidden;
 }
 .offcanvas-header {
   display: flex;
   align-items: center;
-  justify-content: end !important;
+  justify-content: flex-end !important;
   padding: 1rem 1rem;
 }
 .btn-close {
@@ -278,4 +277,12 @@ a {
   border: 0;
   border-radius: 0.25rem;
   opacity: 0.5;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2% !important;
 }

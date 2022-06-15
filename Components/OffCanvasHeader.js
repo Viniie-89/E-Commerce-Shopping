@@ -105,8 +105,8 @@ const Header = () => {
                 </Nav.Link>
                 <Nav.Link
                   className={style.navlink}
-                  href="Login"
-                  active={isActive === "/Login"}
+                  href="MyAccount"
+                  active={isActive === "/MyAccount"}
                 >
                   <div className={style.profileDiv}>
                     <img

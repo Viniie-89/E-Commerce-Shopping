@@ -46,23 +46,26 @@
 }
 .menButton {
   border: 1px solid black;
-  width: 60px;
+  width: 65px;
   height: 35px;
   left: 120px;
   top: 595px;
   background: none;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   /* identical to box height */
 
   text-align: center;
 
-  /* White color */
+  /* Dark color */
 
-  color: black;
+  color: #0d1222;
+
+  /* White color */
+  border: 1px solid #dddddd;
 
   /* background: #5463ff; */
 }
@@ -75,16 +78,19 @@
   background: none;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   /* identical to box height */
 
   text-align: center;
 
-  /* White color */
+  /* Dark color */
 
-  color: black;
+  color: #0d1222;
+
+  /* White color */
+  border: 1px solid #dddddd;
 
   /* background: #5463ff; */
 }
@@ -97,34 +103,38 @@
   background: none;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   /* identical to box height */
 
   text-align: center;
 
+  /* Dark color */
+
+  color: #0d1222;
+
   /* White color */
-
-  color: black;
-
-  /* background: #5463ff; */
+  border: 1px solid #dddddd;
 }
 
 .menButton:hover {
   background: #5463ff;
   color: white;
   border: none;
+  font-weight: bolder !important;
 }
 .womenButton:hover {
   background: #5463ff;
   color: white;
   border: none;
+  font-weight: bolder !important;
 }
 .childrenButton:hover {
   background: #5463ff;
   color: white;
   border: none;
+  font-weight: bolder !important;
 }
 .hrline1 {
   border: 1px solid grey;
@@ -174,15 +184,13 @@
   text-align: center;
   margin-top: 3%;
 }
-.loadButton {
+/* .loadButton {
   border: none;
   outline: none;
   width: 180px;
   height: 48px;
   left: 793px;
   top: 2100px;
-
-  /* gradient */
 
   background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
@@ -191,10 +199,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  /* identical to box height */
+  
 
   color: #ffffff;
-}
+} */
 .cardTitle {
   font-family: "Poppins";
   font-style: normal;
@@ -256,4 +264,50 @@
 }
 .shopImage {
   cursor: pointer;
+}
+.loadButton {
+  width: 180px;
+  height: 48px;
+  left: 793px;
+  top: 2100px;
+
+  /* gradient */
+
+  background: linear-gradient(180deg, #7d89ff 0%, #ab40ff 66.67%);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.05);
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  border: none;
+
+  color: #ffffff;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.loadButton:hover {
+  /* background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; */
+  background-image: linear-gradient(
+    to right,
+    #6253e1,
+    #852d91,
+    #a3a1ff,
+    /* #f24645 */
+  );
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.loadButton:focus {
+  outline: none;
+}
+.divCircle {
+  border-radius: 50px;
 }
