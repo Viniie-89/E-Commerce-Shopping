@@ -38,12 +38,13 @@ const Login = () => {
                   </Link>
                 </h6>
 
-                <div className={style.socialButtonDiv}>
+                {/* <div className={style.socialButtonDiv}>
                   <button className={style.googleButton}>
                     <img
                       src="../Images/googleIcon.png"
                       height={24}
                       width={24}
+                      className={style.googleButtonImage}
                     />
                     <h6 className={style.googleText}>Google</h6>
                   </button>
@@ -55,6 +56,33 @@ const Login = () => {
                       //   className={style.facebookIcon}
                     />
                     <h6 className={style.googleText}>Facebook</h6>
+                  </button>
+                </div> */}
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "50%",
+                  }}
+                >
+                  <button className={style.googleButton}>
+                    <img
+                      src="../Images/googleIcon.png"
+                      height={24}
+                      width={24}
+                    />
+                    <h6 className={style.googleTexts}>Google</h6>
+                  </button>
+
+                  <button className={style.facebookButton}>
+                    <img
+                      src="../Images/facebookkk.png"
+                      height={30}
+                      width={30}
+                      className={style.facebookImage}
+                    />
+                    <h6 className={style.facebookTexts}>Facebook</h6>
                   </button>
                 </div>
 
@@ -91,12 +119,17 @@ const Login = () => {
                 </Form>
 
                 <div className={style.loginFormDiv}>
-                  <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check
-                      type="checkbox"
-                      label="Remember me"
-                      className={style.rememberPlaceholder}
-                    />
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formHorizontalCheck"
+                  >
+                    <Col>
+                      <Form.Check
+                        label="Remember me"
+                        className={style.rememberPlaceholder}
+                      />
+                    </Col>
                   </Form.Group>
                   <h6 className={style.passWordText}>Forget password ?</h6>
                 </div>

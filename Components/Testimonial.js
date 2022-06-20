@@ -4,6 +4,8 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styles from "../styles/testimonial.module.css";
 import testimonial from "../Json/Testimonial.json";
+import Slide from "react-reveal/Slide";
+
 const Testimonial = () => {
   return (
     <Container fluid className={styles.testimonialContainer}>

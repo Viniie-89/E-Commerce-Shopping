@@ -1,5 +1,5 @@
 .productContainer {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .productTitle {
   font-family: "Poppins";
@@ -124,9 +124,6 @@
 }
 .productCard {
   margin-top: 15%;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-}
-.productCard:hover {
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
