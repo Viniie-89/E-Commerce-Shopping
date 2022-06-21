@@ -35,18 +35,6 @@ export default function Home() {
   };
 
   const [data, setData] = useState("../Images/MenImages3.png");
-  const [user, setUser] = useState("a");
-  useEffect(() => {
-    setTimeout(() => {
-      setData("../Images/mImg2.jpg");
-    }, 1000);
-    setTimeout(() => {
-      setData("../Images/imageBannerGirl.png");
-    }, 20000);
-    setTimeout(() => {
-      setData("../Images/MenImages3.png");
-    }, 40000);
-  });
 
   return (
     <>
