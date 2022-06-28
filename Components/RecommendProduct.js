@@ -17,6 +17,7 @@ const RecommendProduct = () => {
     slidesToScroll: 4,
     dots: false,
     arrows: true,
+
     responsive: [
       {
         breakpoint: 992,

@@ -30,8 +30,29 @@ export default function Home() {
     dots: false,
     arrows: true,
     autoplay: true,
-    speed: 2000,
+    speed: 500,
     autoplaySpeed: 2000,
+    beforeChange: (current) => {
+      console.log(current);
+      if (current == 1) {
+        setData("../Images/imageBannerGirl.png");
+      }
+      if (current == 2) {
+        setData("../Images/MenImages3.png");
+      }
+      if (current == 3) {
+        setData("../Images/mImg2.jpg");
+      }
+      if (current == 4) {
+        setData("../Images/imageBannerGirl.png");
+      }
+      if (current == 5) {
+        setData("../Images/MenImages3.png");
+      }
+      if (current == 6) {
+        setData("../Images/mImg2.jpg");
+      }
+    },
   };
 
   const [data, setData] = useState("../Images/MenImages3.png");
@@ -74,7 +95,9 @@ export default function Home() {
                 ullamcorper.
               </p>
               <div className={styles.bannerButtons}>
-                <button className={styles.bannerButton}>Shop Now</button>
+                <Link href="/Shop">
+                  <button className={styles.bannerButton}>Shop Now</button>
+                </Link>
               </div>
             </Col>
             <Col
@@ -131,18 +154,18 @@ export default function Home() {
                     <div className={styles.imageSlider}>
                       <div>
                         <Slider {...settings} className="bannerArrow">
-                          {bannerData.map((elem) => {
+                          {bannerData.map((elem, id) => {
                             return (
                               <>
-                                <div>
+                                <div key={"id1" + id}>
                                   <img
                                     src={elem.image1}
-                                    // onClick={() => setData(elem.image1)}
+                                    onClick={() => setData(elem.image1)}
                                     className={styles.firstSliderImage}
                                     style={{ cursor: "pointer" }}
                                     height={"100%"}
                                     width={"100%"}
-                                  ></img>
+                                  />
                                 </div>
                               </>
                             );

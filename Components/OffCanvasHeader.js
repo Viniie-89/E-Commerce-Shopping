@@ -79,11 +79,7 @@ const Header = () => {
               </Nav.Link>
 
               <div className={style.iconDiv}>
-                <Nav.Link
-                  href="/WishList"
-                  className={style.navlink}
-                  active={isActive === "/WishList"}
-                >
+                <Nav.Link className={style.navlink}>
                   <div className={style.cartDiv}>
                     <img
                       src="../Images/cardts.svg"
@@ -95,8 +91,9 @@ const Header = () => {
                   </div>
                 </Nav.Link>
                 <Nav.Link
+                  href="/WishList"
                   className={style.navlink}
-                  active={isActive === "/Like"}
+                  active={isActive === "/WishList"}
                 >
                   <div className={style.likeDiv}>
                     <img src="../Images/herts.svg" height={24} width={24} />

@@ -7,7 +7,10 @@ import cloth from "../Json/ClotheShop.json";
 import Flip from "react-reveal";
 import Link from "next/link";
 import Range from "../Components/Range";
+import Fade from "react-reveal/Fade";
+import { valueToPercent } from "@mui/base";
 const ClotheShop = () => {
+  const [shopProduct] = useState(cloth);
   const [isActive, setIsActive] = useState(false);
   const [isActive1, setIsActive1] = useState(false);
   const [isActive2, setIsActive2] = useState(false);
@@ -15,6 +18,42 @@ const ClotheShop = () => {
   const [isActive4, setIsActive4] = useState(false);
 
   const [showData, setShowData] = useState(false);
+  const [isActive6, setIsActive6] = useState(true);
+  const [data1, setData1] = useState([]);
+
+  useEffect(() => {}, [data1]);
+
+  useEffect(() => {
+    clickMen();
+  }, []);
+
+  const clickMen = () => {
+    const abc = shopProduct.filter((i) => {
+      return i.categoryname === "mens";
+    });
+    setData1(abc);
+    setIsActive6(true);
+    console.log("filterLogMens", abc);
+  };
+
+  const clickWomen = () => {
+    const abc = shopProduct.filter((i) => {
+      return i.categoryname === "womens";
+    });
+    setData1(abc);
+    setIsActive6(false);
+    console.log("filterLogwomen", abc);
+  };
+
+  const clickChildren = () => {
+    const abc = shopProduct.filter((i) => {
+      return i.categoryname === "children";
+    });
+    setData1(abc);
+    setIsActive6(false);
+    console.log("filterLogchildren", abc);
+  };
+
   const loadData = () => {
     setShowData(true);
   };
@@ -79,13 +118,30 @@ const ClotheShop = () => {
                   <Accordion.Body>
                     <div className={style.categoryDiv}>
                       <div>
-                        <button className={style.menButton}>Men</button>
+                        <button
+                          className={style.menButton}
+                          onClick={clickMen}
+                          style={{
+                            background: isActive6 ? "#5463ff" : "white",
+                            color: isActive6 ? "white" : "black",
+                          }}
+                        >
+                          Men
+                        </button>
                       </div>
                       <div>
-                        <button className={style.womenButton}>Woman</button>
+                        <button
+                          className={style.womenButton}
+                          onClick={clickWomen}
+                        >
+                          Woman
+                        </button>
                       </div>
                       <div>
-                        <button className={style.childrenButton}>
+                        <button
+                          className={style.childrenButton}
+                          onClick={clickChildren}
+                        >
                           Children
                         </button>
                       </div>
@@ -251,9 +307,9 @@ const ClotheShop = () => {
 
           <Col xl={8} lg={8} md={8} sm={12} className={style.col2}>
             <Row>
-              {cloth.map((elem, ind) => {
-                if (ind <= 5) {
-                  return (
+              {data1.map((elem, ind) => {
+                if (ind <= 4) {
+                  return elem.categorydetail.map((val) => (
                     <>
                       <Col
                         xl={4}
@@ -263,34 +319,34 @@ const ClotheShop = () => {
                         className={style.filterCard}
                       >
                         <Card className={style.productCard}>
-                          <Link href={`/product-details/${elem.id}`}>
-                            <img src={elem.image} className={style.shopImage} />
+                          <Link href={`/product-details/${val.id}`}>
+                            <img src={val.image} className={style.shopImage} />
                           </Link>
                           <Card.Body className={style.cardBody1}>
                             <Card.Title className={style.cardTitle}>
-                              {elem.title}
+                              {val.title}
                             </Card.Title>
                             <Card.Title className={style.cardTitles}>
-                              {elem.title1}
+                              {val.title1}
                             </Card.Title>
                           </Card.Body>
                           <Card.Body>
                             <Card.Title className={style.cardTitle1}>
-                              {elem.title2}
+                              {val.title2}
                             </Card.Title>
-                            <img src={elem.star} height={18} width={106} />
+                            <img src={val.star} height={18} width={106} />
                           </Card.Body>
                         </Card>
                       </Col>
                     </>
-                  );
+                  ));
                 }
               })}
 
               {showData &&
                 cloth.map((elem, ind) => {
-                  if (ind >= 6) {
-                    return (
+                  if (ind >= 7) {
+                    return elem.categorydetail.map((val) => (
                       <>
                         <Col
                           xl={4}
@@ -299,31 +355,33 @@ const ClotheShop = () => {
                           sm={6}
                           className={style.filterCard}
                         >
-                          <Card className={style.productCard}>
-                            <Link href={`/product-details/${elem.id}`}>
-                              <img
-                                src={elem.image}
-                                className={style.shopImage}
-                              />
-                            </Link>
-                            <Card.Body className={style.cardBody1}>
-                              <Card.Title className={style.cardTitle}>
-                                {elem.title}
-                              </Card.Title>
-                              <Card.Title className={style.cardTitles}>
-                                {elem.title1}
-                              </Card.Title>
-                            </Card.Body>
-                            <Card.Body>
-                              <Card.Title className={style.cardTitle1}>
-                                {elem.title2}
-                              </Card.Title>
-                              <img src={elem.star} height={18} width={106} />
-                            </Card.Body>
-                          </Card>
+                          <Fade bottom>
+                            <Card className={style.productCard}>
+                              <Link href={`/product-details/${val.id}`}>
+                                <img
+                                  src={val.image}
+                                  className={style.shopImage}
+                                />
+                              </Link>
+                              <Card.Body className={style.cardBody1}>
+                                <Card.Title className={style.cardTitle}>
+                                  {val.title}
+                                </Card.Title>
+                                <Card.Title className={style.cardTitles}>
+                                  {val.title1}
+                                </Card.Title>
+                              </Card.Body>
+                              <Card.Body>
+                                <Card.Title className={style.cardTitle1}>
+                                  {val.title2}
+                                </Card.Title>
+                                <img src={val.star} height={18} width={106} />
+                              </Card.Body>
+                            </Card>
+                          </Fade>
                         </Col>
                       </>
-                    );
+                    ));
                   }
                 })}
             </Row>

@@ -61,7 +61,9 @@ const Shop = () => {
           <Row>
             <Col xl={7} lg={7} md={4} sm={12}>
               <div className={shopStyle.homeDiv}>
-                <h5 className={shopStyle.homeh5}>Home</h5>
+                <Link href="/">
+                  <h5 className={shopStyle.homeh5}>Home</h5>
+                </Link>
                 <h5 className={shopStyle.slash}>/</h5>
                 <h5 className={shopStyle.shoph5}>Shop</h5>
               </div>

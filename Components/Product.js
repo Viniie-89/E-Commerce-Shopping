@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card, NavLink } from "react-bootstrap";
 import style from "../styles/product.module.css";
 import product from "../Json/ProductData.json";
-import Flip from "react-reveal/Flip";
 import categories from "../Json/categories.json";
-import { Fade } from "react-reveal";
+
+import Fade from "react-reveal/Fade";
 const Product = () => {
   const [productData] = useState(categories);
   const [isActive, setIsActive] = useState(true);
@@ -66,9 +66,7 @@ const Product = () => {
               CHOOSE FROM THE BEST PRODUCTS
             </h5>
 
-            <Fade Top>
-              <h3 className={style.productText}>Our Best Seller Product</h3>
-            </Fade>
+            <h3 className={style.productText}>Our Best Seller Product</h3>
             <div className={style.productCategory}>
               <NavLink
                 className={style.tshirth6}
@@ -96,23 +94,26 @@ const Product = () => {
             return elem.categorydetail.map((val) => (
               <>
                 <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-                  <Card className={style.productCard}>
-                    <img src={val.image} className={style.productImage} />
-                    <Card.Body className={style.cardBody1}>
-                      <Card.Title className={style.cardTitle}>
-                        {val.title}
-                      </Card.Title>
-                      <Card.Title className={style.cardTitles}>
-                        {val.title1}
-                      </Card.Title>
-                    </Card.Body>
-                    <Card.Body>
-                      <Card.Title className={style.cardTitle1}>
-                        {val.title2}
-                      </Card.Title>
-                      <img src={val.star} height={18} width={106} />
-                    </Card.Body>
-                  </Card>
+                  <Fade bottom>
+                    <Card className={style.productCard}>
+                      <img src={val.image} className={style.productImage} />
+
+                      <Card.Body className={style.cardBody1}>
+                        <Card.Title className={style.cardTitle}>
+                          {val.title}
+                        </Card.Title>
+                        <Card.Title className={style.cardTitles}>
+                          {val.title1}
+                        </Card.Title>
+                      </Card.Body>
+                      <Card.Body>
+                        <Card.Title className={style.cardTitle1}>
+                          {val.title2}
+                        </Card.Title>
+                        <img src={val.star} height={18} width={106} />
+                      </Card.Body>
+                    </Card>
+                  </Fade>
                 </Col>
               </>
             ));

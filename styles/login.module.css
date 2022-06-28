@@ -66,6 +66,7 @@
   line-height: 21px;
   margin-top: 6%;
   color: #ffffff;
+  margin-right: 3% !important;
 }
 .loginText {
   font-family: "Mada";
@@ -83,7 +84,7 @@
   font-size: 14px;
   line-height: 21px;
   cursor: pointer;
-
+  margin-left: 2%;
   color: #ffffff;
 }
 .googleButton {
@@ -91,11 +92,12 @@
   border: none;
   display: flex;
   margin-right: 3%;
+  margin-top: 2%;
   width: 180px;
   height: 48px;
-  padding-top: 1%;
+  padding-top: 4%;
 
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .socialButtonDiv {
   display: flex;
@@ -106,9 +108,10 @@
   border: none;
   display: flex;
   width: 180px;
+  margin-top: 2%;
   height: 48px;
   justify-content: space-evenly;
-  padding-top: 1%;
+  padding-top: 4%;
 }
 .googleText {
   font-family: "Poppins";
@@ -116,22 +119,15 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-
+  width: 588px;
+  height: 48px;
   color: #0d1222;
 }
 .loginFormInput {
   margin-top: 4%;
 }
 .emailText {
-  /* width: 588px; */
-  /* height: 48px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-
-  color: #dddddd; */
+  height: 48px;
 }
 .emailText::placeholder {
   font-family: "Poppins";
@@ -171,7 +167,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  margin-top: 2px;
+  padding-top: 4px;
   color: #f4f4f4;
 }
 .passWordText {
@@ -201,4 +197,28 @@
 }
 .loginButtonDiv {
   text-align: right;
+}
+
+.googleTexts {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 30px; */
+  /* identical to box height, or 167% */
+
+  /* Dark color */
+
+  color: #0d1222;
+}
+.facebookTexts {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #0d1222;
+}
+.facebookImage {
+  padding-bottom: 5%;
 }
