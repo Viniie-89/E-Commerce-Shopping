@@ -7,9 +7,11 @@ import Footer from "../Components/Footer";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import style from "../styles/contact.module.css";
 import ContactForm from "../Components/ContactForm";
+import ScrollTop from "../Components/ScrollTop";
 const Contact = () => {
   return (
     <>
+      <ScrollTop />
       <OffCanvasHeader />
       <Container
         fluid

@@ -1,6 +1,14 @@
 .tshirtImage {
   margin: auto;
 }
+.shadowDiv {
+  background: #ffffff;
+  width: 304.63px;
+  height: 21px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 2% !important;
+}
 .detailAccordion {
   display: none;
 }
@@ -32,7 +40,7 @@
   background-color: black;
 }
 .Col3 {
-  text-align: end;
+  text-align: right;
 }
 .oblongerPara {
   font-family: "Poppins";

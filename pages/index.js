@@ -3,7 +3,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import OffCanvasHeader from "../Components/OffCanvasHeader";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Footer from "../Components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
@@ -18,6 +18,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { Typewriter } from "react-simple-typewriter";
 import bannerData from "../Json/bannerData.json";
 import "animate.css";
+import ScrollTop from "../Components/ScrollTop";
+import Link from "next/link";
 export default function Home() {
   const settings = {
     dots: true,
@@ -27,13 +29,37 @@ export default function Home() {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
-    // autoplay: true,
-    // speed: 2000,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    beforeChange: (current) => {
+      console.log(current);
+      if (current == 1) {
+        setData("../Images/imageBannerGirl.png");
+      }
+      if (current == 2) {
+        setData("../Images/MenImages3.png");
+      }
+      if (current == 3) {
+        setData("../Images/mImg2.jpg");
+      }
+      if (current == 4) {
+        setData("../Images/imageBannerGirl.png");
+      }
+      if (current == 5) {
+        setData("../Images/MenImages3.png");
+      }
+      if (current == 6) {
+        setData("../Images/mImg2.jpg");
+      }
+    },
   };
-  const [data, setData] = useState("../Images/bannerSlider1.png");
+
+  const [data, setData] = useState("../Images/MenImages3.png");
+
   return (
     <>
+      <ScrollTop />
       <OffCanvasHeader />
       <Container fluid className={styles.bannerContainer}>
         <Container className={styles.bannerCon}>
@@ -69,7 +95,9 @@ export default function Home() {
                 ullamcorper.
               </p>
               <div className={styles.bannerButtons}>
-                <button className={styles.bannerButton}>Shop Now</button>
+                <Link href="/Shop">
+                  <button className={styles.bannerButton}>Shop Now</button>
+                </Link>
               </div>
             </Col>
             <Col
@@ -117,26 +145,27 @@ export default function Home() {
                       <img
                         src={data}
                         height={522}
-                        width={400}
+                        width={412}
                         className={styles.girlImg}
+                        alt="image1"
                       />
                     </div>
 
                     <div className={styles.imageSlider}>
                       <div>
                         <Slider {...settings} className="bannerArrow">
-                          {bannerData.map((elem) => {
+                          {bannerData.map((elem, id) => {
                             return (
                               <>
-                                <div>
+                                <div key={"id1" + id}>
                                   <img
                                     src={elem.image1}
-                                    className={styles.firstSliderImage}
                                     onClick={() => setData(elem.image1)}
+                                    className={styles.firstSliderImage}
                                     style={{ cursor: "pointer" }}
-                                    heigth={"100%"}
+                                    height={"100%"}
                                     width={"100%"}
-                                  ></img>
+                                  />
                                 </div>
                               </>
                             );
@@ -224,9 +253,11 @@ export default function Home() {
                 gravida leo, nec iaculis diam. Nam bibendum mi sed sem finibus
                 ullamcorper.
               </p>
-              <div className={styles.modelButton}>
-                <button className={styles.buttonLogin}>Login Now</button>
-              </div>
+              <Link href="/Login">
+                <div className={styles.modelButton}>
+                  <button className={styles.buttonLogin}>Login Now</button>
+                </div>
+              </Link>
             </Col>
             <Col xl={6} lg={6} md={6} className={styles.Modelcol2}>
               <img

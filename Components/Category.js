@@ -18,6 +18,7 @@ const Category = () => {
     slidesToScroll: 1,
     dots: false,
     arrows: true,
+    fade: true,
     responsive: [
       {
         breakpoint: 578,

@@ -1,14 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React, { useState } from "react";
 import OffCanvasHeader from "../Components/OffCanvasHeader";
 
 import Footer from "../Components/Footer";
 import { Row, Col, Container, Form } from "react-bootstrap";
 import style from "../styles/login.module.css";
 import Link from "next/link";
+import GoogleLogin from "react-google-login";
 const Login = () => {
+  const handleFailure = (result) => {
+    console.log(result);
+  };
+
+  const handleLogin = (googleData) => {
+    console.log(googleData);
+  };
   return (
     <>
       <OffCanvasHeader />
@@ -38,23 +46,37 @@ const Login = () => {
                   </Link>
                 </h6>
 
-                <div className={style.socialButtonDiv}>
-                  <button className={style.googleButton}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "50%",
+                  }}
+                >
+                  {/* <button className={style.googleButton}>
                     <img
                       src="../Images/googleIcon.png"
                       height={24}
                       width={24}
                     />
-                    <h6 className={style.googleText}>Google</h6>
-                  </button>
+                    <h6 className={style.googleTexts}>Google</h6>
+                  </button> */}
+                  <GoogleLogin
+                    clientId="816099084594-f2osu1uhntm77ovn176s74f121fpo8g7.apps.googleusercontent.com"
+                    buttonText="Google"
+                    onSuccess={handleLogin}
+                    onFailure={handleFailure}
+                    cookiePolicy={"single_host_origin"}
+                  ></GoogleLogin>
+
                   <button className={style.facebookButton}>
                     <img
                       src="../Images/facebookkk.png"
-                      height={24}
-                      width={24}
-                      //   className={style.facebookIcon}
+                      height={30}
+                      width={30}
+                      className={style.facebookImage}
                     />
-                    <h6 className={style.googleText}>Facebook</h6>
+                    <h6 className={style.facebookTexts}>Facebook</h6>
                   </button>
                 </div>
 
@@ -63,7 +85,10 @@ const Login = () => {
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
                   >
-                    <Form.Label className={style.emailPlaceholder}>
+                    <Form.Label
+                      className={style.emailPlaceholder}
+                      // value={email}
+                    >
                       Email
                     </Form.Label>
                     <Form.Control
@@ -91,18 +116,25 @@ const Login = () => {
                 </Form>
 
                 <div className={style.loginFormDiv}>
-                  <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check
-                      type="checkbox"
-                      label="Remember me"
-                      className={style.rememberPlaceholder}
-                    />
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formHorizontalCheck"
+                  >
+                    <Col>
+                      <Form.Check
+                        label="Remember me"
+                        className={style.rememberPlaceholder}
+                      />
+                    </Col>
                   </Form.Group>
                   <h6 className={style.passWordText}>Forget password ?</h6>
                 </div>
 
                 <div className={style.loginButtonDiv}>
-                  <button className={style.loginButton}>Login</button>
+                  <Link href="/MyAccount">
+                    <button className={style.loginButton}>Login</button>
+                  </Link>
                 </div>
               </Col>
             </Row>

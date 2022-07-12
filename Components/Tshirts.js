@@ -69,6 +69,7 @@ const Tshirts = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
+
     responsive: [
       {
         breakpoint: 577,
@@ -100,6 +101,7 @@ const Tshirts = () => {
                           className={styles.tshirtImage}
                         />
                       </div>
+                      <div className={styles.shadowDiv}></div>
                     </>
                   );
                 })}

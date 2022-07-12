@@ -53,7 +53,7 @@
   color: #f4f4f4;
 }
 .col2Image {
-  text-align: end;
+  text-align: right;
   /* position: absolute; */
 }
 /* .aboutContainer {
@@ -79,7 +79,7 @@
 
 .aboutImageBackground {
   z-index: 123667838;
-  text-align: end;
+  text-align: right;
 }
 .image {
   height: 100%;
