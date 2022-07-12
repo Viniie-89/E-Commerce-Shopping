@@ -46,18 +46,13 @@ const Login = () => {
                   </Link>
                 </h6>
 
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    width: "50%",
-                  }}
-                >
-                  {/* <button className={style.googleButton}>
+                {/* <div className={style.socialButtonDiv}>
+                  <button className={style.googleButton}>
                     <img
                       src="../Images/googleIcon.png"
                       height={24}
                       width={24}
+                      className={style.googleButtonImage}
                     />
                     <h6 className={style.googleTexts}>Google</h6>
                   </button> */}
@@ -68,6 +63,33 @@ const Login = () => {
                     onFailure={handleFailure}
                     cookiePolicy={"single_host_origin"}
                   ></GoogleLogin>
+
+                  <button className={style.facebookButton}>
+                    <img
+                      src="../Images/facebookkk.png"
+                      height={30}
+                      width={30}
+                      className={style.facebookImage}
+                    />
+                    <h6 className={style.facebookTexts}>Facebook</h6>
+                  </button>
+                </div> */}
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "50%",
+                  }}
+                >
+                  <button className={style.googleButton}>
+                    <img
+                      src="../Images/googleIcon.png"
+                      height={24}
+                      width={24}
+                    />
+                    <h6 className={style.googleTexts}>Google</h6>
+                  </button>
 
                   <button className={style.facebookButton}>
                     <img

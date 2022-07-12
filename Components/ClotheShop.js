@@ -319,7 +319,7 @@ const ClotheShop = () => {
                         className={style.filterCard}
                       >
                         <Card className={style.productCard}>
-                          <Link href={`/product-details/${elem.id}`}>
+                          <Link href={`/product-details/${val.id}`}>
                             <img src={val.image} className={style.shopImage} />
                           </Link>
                           <Card.Body className={style.cardBody1}>
